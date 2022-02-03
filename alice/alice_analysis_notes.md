@@ -1,3 +1,9 @@
+---
+title: PAGE TITLE HERE
+layout: template
+filename: alice_analysis_notes.md
+---
+
 ## Useful analysis notes
 [Back to table of Contents](https://github.com/reynier0611/personal_notes/blob/master/README.md)
 
