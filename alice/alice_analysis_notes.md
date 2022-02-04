@@ -1,10 +1,3 @@
----
-title: PAGE TITLE HERE
-layout: template
-theme: jekyll-theme-dinky
-filename: alice_analysis_notes.md
----
-
 ## Useful analysis notes
 [Back to table of Contents](https://reynier0611.github.io)
 
