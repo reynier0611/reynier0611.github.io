@@ -8,6 +8,10 @@
 
 # Useful Links
 
+- **[Splitting the screen with vim](misc/vim_commands.md)**<br>
+
+- **[Profiling python code](misc/profiling_python_code.md)**<br>
+
 - **[Markdown cheat-sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)**<br>
 
 - **[Github tips](https://ohshitgit.com)**<br>
