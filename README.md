@@ -2,11 +2,8 @@
 
 # ALICE
 
-- **[Useful analysis notes](https://github.com/reynier0611/reynier0611.github.io/alice/alice_analysis_notes.md)**<br>
-- **[Useful analysis notes](https://github.com/reynier0611/reynier0611.github.io/blob/main/alice/alice_analysis_notes.md)**<br>
-- **[Useful analysis notes](https://github.com/reynier0611/reynier0611.github.io/alice_analysis_notes.md)**<br>
-- **[Useful analysis notes](https://github.com/reynier0611/reynier0611.github.io/blob/main/alice_analysis_notes.md)**<br>
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
+- **[Useful analysis notes](alice_analysis_notes.md)**<br>
 
 # EIC
 
