@@ -3,7 +3,6 @@
 # ALICE
 
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
-- **[Useful analysis notes](alice_analysis_notes.md)**<br>
 
 # EIC
 
