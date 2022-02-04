@@ -1,12 +1,14 @@
-# LBL
+# Table of Content
 
-# ALICE
+## LBL
+
+## ALICE
 
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
 
-# EIC
+## EIC
 
-# Useful Links
+## Useful Links
 
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
 
@@ -20,6 +22,6 @@
 
 - **[LaTeX Tables Generator](https://www.tablesgenerator.com)**<br>
 
-# Fun links
+## Fun links
 
 - **[A new map of the standard model of particle physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022/)**<br>
