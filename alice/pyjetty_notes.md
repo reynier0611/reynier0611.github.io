@@ -26,19 +26,15 @@ The MC files are produced in separate $p_{\rm T, \, hard}$ bins. This is done to
 
 #### 1. Merging all files from the same $p_{\rm T, \, hard}$ bin
 
-hadd all root files corresponding to the same $p_{\rm T, \, hard}$ bin. See, for example: ```slurm_merge_LHC18b8.sh``` and ```merge_LHC18b8.sh``` in ```pyjetty/pyjetty/alice_analysis/slurm/utils/rey/```. Edit both files and replace ```rey``` with the appropriate username. Also, modify the number in ```JOB_ID=209384``` in merge_LHC18b8.sh to reflect the right job number. Then execute:
+hadd all root files corresponding to the same $p_{\rm T, \, hard}$ bin. See, for example: ```slurm_merge_LHC18b8.sh``` and ```merge_LHC18b8.sh``` in ```pyjetty/pyjetty/alice_analysis/slurm/utils/rey/```. Edit both files and replace ```rey``` with the appropriate username. Also, modify the number in ```JOB_ID=209384``` in ```merge_LHC18b8.sh``` to reflect the right job number. Then execute:
 
 ```
 sbatch slurm_merge_LHC18b8.sh
 ```
 
-This is for ```LHC18b8``` (the pp MC dataset). For ```LHC20g4``` (the PbPb MC dataset) do:
+This is for ```LHC18b8``` (the pp MC dataset). For ```LHC20g4``` (the PbPb MC dataset) do: ```sbatch slurm_merge_LHC20g4.sh```. For merging pp fast simulation with Herwig7 use: ```sbatch slurm_merge_LHC18b8_fastsim_herwig.sh```. For merging pp or PbPb fast simulation with PYTHIA8 use: ```sbatch slurm_merge_LHC18b8_fastsim_pythia.sh```. For merging PbPb fast simulation with JEWEL use: ```sbatch slurm_merge_fastsim_PbPb_jewel.sh```.
 
-```
-sbatch slurm_merge_LHC20g4.sh
-```
-
-#### 2. Scaling by sigma/N
+#### 2. Scaling by $\sigma/N$
 
 cd into the directory containing the 1/, 2/, ... sub-directories and scale the combined files corresponding to a given pThard bin by the appropriate scale factor. To do so, run scaleHistograms.py (with the correct file path) and config file associated with the simulation:
 
@@ -57,4 +53,12 @@ respectively. For the Pb-Pb full simulations, the scale factors are here:
 
 ```
 /rstorage/alice/data/LHC20g4/scaleFactors.yaml
+```
+
+#### 3. Final merge of all $p_{\rm T, \, hard}$ splits into one file:
+
+After the histograms have been scaled, you should merge the $p_{\rm T, \, hard}$ bins. See for example ```merge_pthat.sh```. The number in the line ```JOB_ID=209384``` and paths should be updated. Then do:
+
+```
+source merge_pthat.sh
 ```
