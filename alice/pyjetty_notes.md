@@ -1,4 +1,4 @@
-## Useful analysis notes
+## Useful pyjetty notes
 [Back to table of Contents](../README.md)
 
 ### Merging, Scaling, and Merging pThard - MC
