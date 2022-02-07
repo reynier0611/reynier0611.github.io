@@ -2,6 +2,8 @@
 
 ## LBL
 
+- **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
+
 ## ALICE
 
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
