@@ -4,6 +4,8 @@
 
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
 
+- **[Data on hiccup and fastsim](alice/hiccup_data_and_fastsim.md)**<br>
+
 ## ALICE
 
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
