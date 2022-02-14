@@ -22,6 +22,4 @@ MathJax.Hub.Queue(function() {
 
 ### Fastsim
 
-The slurm script we use for fast simulations can be found [here](https://github.com/matplo/pyjetty/blob/master/pyjetty/alice_analysis/slurm/sbatch/fastsim/slurm_fastsim_jewel.sh).
-
-This script writes out to ```/rstorage/generators/jewel_alice/tree_fastsim```.
+The code that we use for momentum smearing and efficiency on hiccup can be found [here](https://github.com/matplo/pyjetty/blob/master/pyjetty/alice_analysis/process/user/fastsim/eff_smear.py). An example slurm script we use for fast simulations can be found [here](https://github.com/matplo/pyjetty/blob/master/pyjetty/alice_analysis/slurm/sbatch/fastsim/slurm_fastsim_jewel.sh). This script writes out to ```/rstorage/generators/jewel_alice/tree_fastsim```.
