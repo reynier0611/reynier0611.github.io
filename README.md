@@ -6,6 +6,8 @@
 
 - **[Data on hiccup and fastsim](alice/hiccup_data_and_fastsim.md)**<br>
 
+- **[## Notes on pyjetty structure](alice/pyjetty_structure.md)**<br>
+
 ## ALICE
 
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
