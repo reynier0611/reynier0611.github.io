@@ -24,3 +24,7 @@ the function ```plot_obs_projection``` gets called in ```plot_obs_projections```
 ## Response-Matrix Slices:
 
 * response-matrix slices plotted in: ```analysis/user/substructure/roounfold_obs.py``` (see function ```plot_RM_slices```)
+
+## Unfolding
+
+Done in ```analysis/user/substructure/roounfold_obs.py```. Search the code for the line that reads ```unfold_bayes = ROOT.RooUnfoldBayes(response, hData, i)```. The unfolded (truth) distribution is then obtained by doing: ```hUnfolded = unfold_bayes.Hreco(self.errorType)```. See documentation for these functions [here](https://hepunx.rl.ac.uk/~adye/software/unfold/htmldoc-dev/RooUnfoldBayes.html).
