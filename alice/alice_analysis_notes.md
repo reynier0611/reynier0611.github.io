@@ -21,6 +21,7 @@ MathJax.Hub.Queue(function() {
 [Back to table of Contents](../README.md)
 
 ### Mine
+- [RCT - Measurements of jet-axis differences in 0-10$\%$ Pb-Pb collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-notes.web.cern.ch/node/1300)
 - [RCT - Measurements of jet-axis differences in pp collisions at $\sqrt{s}=$5.02 TeV](https://alice-notes.web.cern.ch/node/1169)
 
 ### Others
