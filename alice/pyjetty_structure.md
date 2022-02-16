@@ -66,3 +66,10 @@ for (Int_t kiter = 0 ; kiter < _niter; kiter++) {
     	PbarCi= _nbarCi;
     	PbarCi *= 1.0/_nbartrue;
 ```
+
+A breakdown of what's happening in the code above is represented below:
+
+<img src="bayesUnfold.jpg"
+    style="width: 50%;"
+    alt="bayesUnf"
+    style="float: left; margin-right: 10px;" />
