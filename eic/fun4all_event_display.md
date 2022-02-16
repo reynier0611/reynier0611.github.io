@@ -38,5 +38,5 @@ g4->ApplyCommand("/vis/viewer/zoom 1")
 
 ---
 
-### Useful resentations related to Fun4All
+### Useful presentations related to Fun4All
 ['Detector Configurations in Simulations' by Friederike Bock & Nicolas Schmidt](https://indico.bnl.gov/event/11112/contributions/47261/attachments/33424/53719/ECCE_Ornl.pdf)
