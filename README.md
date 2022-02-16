@@ -14,6 +14,10 @@
 
 ## EIC
 
+- **[EIC Links](eic/eic_links.md)**<br>
+
+- **[Fun4All commands for visualization](eic/fun4all_event_display.md)**<br>
+
 ## Useful Links
 
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
