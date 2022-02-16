@@ -12,6 +12,8 @@
 
 - **[Useful analysis notes](alice/alice_analysis_notes.md)**<br>
 
+- **[Hyperloop operator training](alice/hyperloop_operator.md)**<br>
+
 ## EIC
 
 - **[EIC Links](eic/eic_links.md)**<br>
