@@ -73,3 +73,9 @@ A breakdown of what's happening in the code above is represented below:
     style="width: 40%;"
     alt="bayesUnf"
     style="float: left; margin-right: 10px;" />
+
+## Embedding
+
+See function ```analyze_event``` in ```user/substructure/process_mc_base.py```.
+
+The embedding is done right after a comment that reads ```# If Pb-Pb, construct embedded event (do this once, for all jetR)```
