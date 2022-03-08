@@ -25,9 +25,10 @@ MathJax.Hub.Queue(function() {
 - [RCT - Measurements of jet-axis differences in pp collisions at $\sqrt{s}=$5.02 TeV](https://alice-notes.web.cern.ch/node/1169)
 
 ### Others
+- [E. Lesser - Measurements of the groomed and ungroomed jet angularities and mass in central Pb-Pb collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-notes.web.cern.ch/node/1306)
 - [J. Mulligan - Measurements of inclusive and leading subjet fragmentation in pp and Pb–Pb collisions at 5.02 TeV](https://alice-notes.web.cern.ch/node/1175)
 - [J. Mulligan - Measurements of the groomed jet radius and groomed momentum fraction in pp and central Pb–Pb collisions at 5.02 TeV](https://alice-notes.web.cern.ch/node/1069)
 - [E. Lesser - Measurements of groomed generalized jet angularities in pp collisions at $\sqrt{s}=5.02$ TeV with ALICE](https://alice-notes.web.cern.ch/node/1119)
 
 ## Papers
-- [RCT - Measurement of the opening angle between jet axes in pp collisions at 𝑠$\sqrt{s_{NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
+- [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
