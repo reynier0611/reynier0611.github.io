@@ -22,6 +22,8 @@
 
 ## Useful Links
 
+- **[PYTHIA notes](misc/pythia.md)**<br>
+
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
 
 - **[Profiling python code](misc/profiling_python_code.md)**<br>
