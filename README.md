@@ -14,6 +14,10 @@
 
 - **[Hyperloop operator training](alice/hyperloop_operator.md)**<br>
 
+## NERSC
+
+- **[Installing ROOT](nersc/installing_root.md)**<br>
+
 ## EIC
 
 - **[EIC Links](eic/eic_links.md)**<br>
