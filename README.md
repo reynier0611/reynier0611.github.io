@@ -16,7 +16,7 @@
 
 ## NERSC
 
-- **[Installing ROOT](nersc/installing_root.md)**<br>
+- **[Installing Software](nersc/installing_root.md)**<br>
 
 ## EIC
 
