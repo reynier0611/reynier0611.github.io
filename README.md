@@ -26,6 +26,8 @@
 
 ## Useful Links
 
+- **[Installing software](misc/installing_software.md)**<br>
+
 - **[PYTHIA notes](misc/pythia.md)**<br>
 
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
