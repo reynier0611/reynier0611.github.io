@@ -24,3 +24,7 @@ The secound one gathers the information necessary to align the layers.
 [This](https://twiki.cern.ch/twiki/bin/view/ALICE/ITS3WP3DESY2020August?id=1&filename=IMG_2726.jpg#igp1) is the page where you can find the details of the setup for the example.
 
 All test beam runs in the past are [here](https://twiki.cern.ch/twiki/bin/view/ALICE/ITS3WP3).
+
+
+#### Output from step 1 (create mask) after changing the number of events to 100:
+See [here](its3_test_beam_step1.md)
