@@ -14,6 +14,8 @@
 
 - **[Hyperloop operator training](alice/hyperloop_operator.md)**<br>
 
+- **[ITS3 Test Beam Analysis](alice/its3_test_beam.md)**<br>
+
 ## NERSC
 
 - **[Installing Software](nersc/installing_root.md)**<br>
