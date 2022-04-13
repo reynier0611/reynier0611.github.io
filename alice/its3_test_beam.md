@@ -20,3 +20,7 @@ Upon inspection of ```./run_analysis_example.sh``` one sees there are four main 
 The first one basically removes the noisy and dead pixels from the sample.
 
 The secound one gathers the information necessary to align the layers.
+
+[This](https://twiki.cern.ch/twiki/bin/view/ALICE/ITS3WP3DESY2020August?id=1&filename=IMG_2726.jpg#igp1) is the page where you can find the details of the setup for the example.
+
+All test beam runs in the past are [here](https://twiki.cern.ch/twiki/bin/view/ALICE/ITS3WP3).
