@@ -26,5 +26,8 @@ The secound one gathers the information necessary to align the layers.
 All test beam runs in the past are [here](https://twiki.cern.ch/twiki/bin/view/ALICE/ITS3WP3).
 
 
-#### Output from step 1 (create mask) after changing the number of events to 100:
-See [here](its3_test_beam_step1.md)
+#### Output log (after changing the number of events to 1000):
+- Step 1: see [here](its3_test_beam_step1.md)
+- Step 2: see [here](its3_test_beam_step2.md)
+- Step 3: see [here](its3_test_beam_step3.md)
+- Step 4: see [here](its3_test_beam_step4.md)
