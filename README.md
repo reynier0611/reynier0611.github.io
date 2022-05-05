@@ -20,6 +20,8 @@
 
 - **[Installing Software](nersc/installing_root.md)**<br>
 
+- **[Using Jupyter Notebooks on Cori](nersc/jupyter.md)**<br>
+
 ## EIC
 
 - **[EIC Links](eic/eic_links.md)**<br>
