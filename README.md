@@ -28,6 +28,8 @@
 
 - **[Fun4All commands for visualization](eic/fun4all_event_display.md)**<br>
 
+- **[DD4HEP on Cori](eic/dd4hep.md)**<br>
+
 ## Useful Links
 
 - **[Installing software](misc/installing_software.md)**<br>
