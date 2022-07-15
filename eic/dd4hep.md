@@ -48,6 +48,7 @@ ReconstructedParticles.p.z = -0.241075
 Yue Shi sent us two codes for the updated realistic seeding: ```TrackParamACTSSeeding.cpp``` and ```track_reconstruction.py```. We need to do
 
 1. Get a copy of Juggler:
+
 ```
 cd /project/projectdirs/alice/reynier/eic
 
