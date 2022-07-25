@@ -22,6 +22,8 @@
 
 - **[Using Jupyter Notebooks on Cori](nersc/jupyter.md)**<br>
 
+- **[ML on Perlmutter](nersc/ml_on_perlmutter.md)**<br>
+
 ## EIC
 
 - **[EIC Links](eic/eic_links.md)**<br>
