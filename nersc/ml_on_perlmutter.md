@@ -14,3 +14,8 @@ Request an interactive node from the slurm batch system:
 ```
 salloc --nodes 1 --qos interactive --time 04:00:00 --constraint gpu --gpus 4 --account=alice_g
 ```
+
+Run code:
+```
+python steer_analysis.py --read /pscratch/sd/r/reynier/results.h5 --analyze
+```
