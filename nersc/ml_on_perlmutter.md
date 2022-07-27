@@ -62,3 +62,33 @@ Training a NN with z in all three channels (r,g,b) takes:
 - 45 min (when generating 10k events) n_epochs: 30
 - 73 min (when generating 40k events) n_epochs: 30
 - 142 min (2.3h) (when generating 10k events) n_epochs: 100
+
+### Current settings in config:
+```
+n_events: see above
+n_particles_max_per_event: 200
+n_jets_per_event: 5
+n_particles_max_per_jet: 50
+
+jetR: [0.4]
+
+#------------------------------------------------------------------
+# These parameters are used only in ML analysis
+#------------------------------------------------------------------
+
+# Size of labeled data to load
+n_train: 1500
+n_val: 300
+n_test: 300
+
+# Select model: pix2pix_Brownlee_jetimage, pix2pix_Brownlee_4xNimage
+models: [pix2pix_Brownlee_jetimage]
+
+pix2pix_Brownlee_jetimage:
+  image_granularity: 256
+  n_epochs: see above
+  n_batch: 1
+  learning_rate: 0.0002
+  beta_1: 0.5
+  observables_per_pixel: ['constit_z','constit_z','constit_z']
+```
