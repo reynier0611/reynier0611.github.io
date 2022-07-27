@@ -40,6 +40,12 @@ python steer_analysis.py --generate --write
 scp TestOutput/results.h5 reynier@perlmutter-p1.nersc.gov:/pscratch/sd/r/reynier/
 ```
 
+### Copying files back to hiccup:
+
+```
+scp reynier@perlmutter-p1.nersc.gov:~/ml-hadronization/*.h5 .
+```
+
 ### Some notes on the results:
 
 Training a NN with z in all three channels (r,g,b) takes:
