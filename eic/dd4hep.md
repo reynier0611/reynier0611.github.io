@@ -12,6 +12,7 @@ ssh into Cori, go to a convenient directory, and run:
 shifter --image=eicweb/jug_xl:nightly /bin/bash
 eic-shell
 source /opt/detector/setup.sh
+cd /global/project/projectdirs/m3763/reynier/
 mkdir DD4HEP; cd DD4HEP
 git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
 ```
@@ -67,12 +68,15 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${ATHENA_PREFIX}/lib
 mv ../track_reconstruction.py reconstruction_benchmarks/benchmarks/tracking/options/track_reconstruction.py
 ```
 
+### Running a batch job
 
+```
+cd /global/project/projectdirs/m3763/reynier/DD4HEP/reconstruction_benchmarks/slurm_scripts
+sbatch 1_slurm_test.sh
+```
 
+This script collects all the necessary slurm information and runs ```2_run_test_pions.sh```. This runs ```benchmarks/tracking/central_pions.sh```. This script collects a series of arguments (e.g. number of events) and then:
 
-
-
-
-
-
-
+* generates events: ```root -b -q "benchmarks/tracking/scripts/gen_central_pions.cxx+(...")"```
+* runs the Geant4 simulation: ```ddsim --runType batch ...```
+* reconstructs events: ```benchmarks/tracking/scripts/rec_central_pions.cxx+```
