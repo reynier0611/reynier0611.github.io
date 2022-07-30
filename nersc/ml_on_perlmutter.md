@@ -11,8 +11,8 @@ srun -N 1 -n 20 -t 2:00:00 -p quick --pty bash
 cd ml_hadronization/ml-hadronization/
 source init.sh
 cd ml_hadronization/ml-hadronization/ # previous line kicks me back to home directory
-python steer_analysis.py --generate --write
-scp TestOutput/results.h5 reynier@perlmutter-p1.nersc.gov:/pscratch/sd/r/reynier/
+python steer_analysis.py --generate --write --outputDir /rstorage/alice/AnalysisResults/rey/ml/data
+scp /rstorage/alice/AnalysisResults/rey/ml/data/results.h5 reynier@perlmutter-p1.nersc.gov:/pscratch/sd/r/reynier/
 ```
 
 if need more time than two hours:
@@ -29,7 +29,7 @@ ssh reynier@perlmutter-p1.nersc.gov
 screen -S ML
 salloc --nodes 1 --qos interactive --time 04:00:00 --constraint gpu --gpus 4 --account=alice_g
 cd ml-hadronization/;source init_perlmutter.sh
-python steer_analysis.py --read /pscratch/sd/r/reynier/results.h5 --analyze
+python steer_analysis.py --read /pscratch/sd/r/reynier/results.h5 --analyze --outputDir /pscratch/sd/r/reynier/
 ```
 
 then press Ctrl+A Ctrl+D to exit the screen session.

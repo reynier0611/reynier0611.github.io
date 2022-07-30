@@ -38,6 +38,8 @@
 
 - **[PYTHIA notes](misc/pythia.md)**<br>
 
+- **[TREX LBNL](misc/trex.md)**<br>
+
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
 
 - **[Profiling python code](misc/profiling_python_code.md)**<br>

@@ -13,8 +13,9 @@ shifter --image=eicweb/jug_xl:nightly /bin/bash
 eic-shell
 source /opt/detector/setup.sh
 cd /global/project/projectdirs/m3763/reynier/
-mkdir DD4HEP; cd DD4HEP
-git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
+mkdir DD4HEP # ONLY THE FIRST TIME
+cd DD4HEP
+git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git # ONLY THE FIRST TIME
 ```
 
 Try the following commands, which run 100 pions:
