@@ -2,6 +2,7 @@
 [Back to table of Contents](../README.md)
 
 Purpose:
+
 - Give a presentation in one of the most impactful conferences in the field of heavy-ion collisions
 - Showcase new physics results from the laboratory
 - Strengthen our position within the ALICE collaboration and CERN
@@ -9,6 +10,7 @@ Purpose:
 - Learn about cutting-edge research being done elsewhere that can be translated into novel future measurements.
 
 Benefit:
+
 - Showcasing new physics results from analyses led by LBNL physicists specifically and the USA physics community in general, to further establish a strong USA presence in the international physics community.
 - Getting the international physics community interested and involved in the research done at LBNL which can attract future graduate students and postdocs to the laboratory.
 - Developing professional relationships with theorists who can provide insights and theory predictions to be benchmarked with our measurement.
