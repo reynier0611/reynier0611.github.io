@@ -1,4 +1,4 @@
-## Useful pyjetty notes
+## Notes on JSUB coordination
 [Back to table of Contents](../README.md)
 
 mailto: alice-pag-je-jsub@cern.ch
