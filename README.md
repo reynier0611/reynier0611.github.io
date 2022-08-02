@@ -16,6 +16,8 @@
 
 - **[ITS3 Test Beam Analysis](alice/its3_test_beam.md)**<br>
 
+- **[JSUB Coordination](alice/jsub.md)**<br>
+
 ## NERSC
 
 - **[Installing Software](nersc/installing_root.md)**<br>
