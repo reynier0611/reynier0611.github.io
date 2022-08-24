@@ -29,7 +29,7 @@ ssh reynier@perlmutter-p1.nersc.gov
 screen -S ML
 salloc --nodes 1 --qos interactive --time 04:00:00 --constraint gpu --gpus 4 --account=alice_g
 cd ml-hadronization/;source init_perlmutter.sh
-python steer_analysis.py --read /pscratch/sd/r/reynier/results.h5 --analyze --outputDir /pscratch/sd/r/reynier/
+python steer_analysis.py --read /pscratch/sd/r/reynier/data_jets_1M_events.h5 --analyze --outputDir /pscratch/sd/r/reynier/
 ```
 
 then press Ctrl+A Ctrl+D to exit the screen session.

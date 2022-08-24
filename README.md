@@ -40,6 +40,8 @@
 
 - **[PYTHIA notes](misc/pythia.md)**<br>
 
+- **[LaTeX diff](misc/latex_diff.md)**<br>
+
 - **[TREX LBNL](misc/trex.md)**<br>
 
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>

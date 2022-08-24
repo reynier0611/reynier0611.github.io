@@ -81,3 +81,12 @@ This script collects all the necessary slurm information and runs ```2_run_test_
 * generates events: ```root -b -q "benchmarks/tracking/scripts/gen_central_pions.cxx+(...")"```
 * runs the Geant4 simulation: ```ddsim --runType batch ...```
 * reconstructs events: ```benchmarks/tracking/scripts/rec_central_pions.cxx+```
+
+
+### Tests
+
+```
+time bash benchmarks/tracking/RCT_pions.sh
+```
+
+100 pions takes approximately 1 min 40 sec
