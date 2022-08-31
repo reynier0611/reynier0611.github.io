@@ -32,5 +32,5 @@ MathJax.Hub.Queue(function() {
 - [J. Mulligan - Inclusive full jet measurements in Pb-Pb collisions at 5.02 TeV with ALICE](https://alice-notes.web.cern.ch/node/814)
 
 ## Papers
-- [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
+- [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
 - [RCT - Measurement of the angle between jet axes in Pb-Pb collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/8394)
