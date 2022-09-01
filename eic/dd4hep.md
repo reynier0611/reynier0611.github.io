@@ -90,3 +90,9 @@ time bash benchmarks/tracking/RCT_pions.sh
 ```
 
 100 pions takes approximately 1 min 40 sec
+
+### Passing background hepmc file to DD4HEP GEANT simulation
+
+```
+npsim --runType batch --numberOfEvents 100 --compactFile ${DETECTOR_PATH}/${JUGGLER_DETECTOR}.xml --inputFiles ~/out_int_window_100.0ns_nevents_100.hepmc --outputFile test.root
+```
