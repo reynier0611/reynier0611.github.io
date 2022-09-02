@@ -94,5 +94,5 @@ time bash benchmarks/tracking/RCT_pions.sh
 ### Passing background hepmc file to DD4HEP GEANT simulation
 
 ```
-npsim --runType batch --numberOfEvents 100 --compactFile ${DETECTOR_PATH}/${JUGGLER_DETECTOR}.xml --inputFiles ~/out_int_window_100.0ns_nevents_100.hepmc --outputFile test.root
+npsim --runType batch --numberOfEvents 1000 --compactFile ${DETECTOR_PATH}/${JUGGLER_DETECTOR}.xml --inputFiles ~/out_int_window_100.0ns_nevents_1000.hepmc --outputFile test1000.edm4hep.root
 ```
