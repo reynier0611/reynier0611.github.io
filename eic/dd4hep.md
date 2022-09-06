@@ -3,12 +3,15 @@
 
 ---
 
-See more details [https://github.com/bschmookler/athena_ana](here).
+See more details [https://github.com/bschmookler/athena_ana](here) and [https://demo.hedgedoc.org/s/Dm9DG1oi7](here).
 
 ### Getting DD4HEP working on Cori
 
+#### First time:
+
 ssh into Cori, go to a convenient directory, and run:
 ```
+shifterimg pull eicweb/jug_xl:nightly
 shifter --image=eicweb/jug_xl:nightly /bin/bash
 eic-shell
 source /opt/detector/setup.sh
@@ -17,6 +20,18 @@ mkdir DD4HEP # ONLY THE FIRST TIME
 cd DD4HEP
 git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git # ONLY THE FIRST TIME
 ```
+
+#### Subsequent times:
+
+```
+shifterimg pull eicweb/jug_xl:nightly # From time to time, to update the image
+shifter --image=eicweb/jug_xl:nightly /bin/bash
+eic-shell
+source /opt/detector/setup.sh
+cd /global/project/projectdirs/m3763/reynier/DD4HEP
+```
+
+#### Testing:
 
 Try the following commands, which run 100 pions:
 ```
