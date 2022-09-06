@@ -111,3 +111,29 @@ time bash benchmarks/tracking/RCT_pions.sh
 ```
 npsim --runType batch --numberOfEvents 1000 --compactFile ${DETECTOR_PATH}/${JUGGLER_DETECTOR}.xml --inputFiles ~/out_int_window_100.0ns_nevents_1000.hepmc --outputFile test1000.edm4hep.root
 ```
+
+### Changing beampipe thickness
+
+```
+cd /project/projectdirs/alice/reynier/eic
+mkdir repos; cd repos
+git clone https://github.com/eic/ip6.git
+cd /project/projectdirs/alice/reynier/eic/repos/ip6
+vim ip6/central_beampipe.xml
+```
+change the gold coating. For example, set:
+```
+gold_thickness="1e-10*um"
+```
+Then compile this change:
+```
+cmake -B build -S . -DCMAKE_INSTALL_PREFIX=install -DEPIC_ECCE_LEGACY_COMPAT=OFF;cmake --build build;cmake --install build
+```
+These commands are explained [https://github.com/eic/epic](here). Then source:
+```
+source install/setup.sh
+```
+And finally run a material scan to see if the change shows up:
+```
+materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
+```
