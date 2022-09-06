@@ -3,7 +3,7 @@
 
 ---
 
-See more details [https://github.com/bschmookler/athena_ana](here) and [https://demo.hedgedoc.org/s/Dm9DG1oi7](here).
+See more details [here](https://github.com/bschmookler/athena_ana) and [here](https://demo.hedgedoc.org/s/Dm9DG1oi7).
 
 ### Getting DD4HEP working on Cori
 
@@ -129,7 +129,7 @@ Then compile this change:
 ```
 cmake -B build -S . -DCMAKE_INSTALL_PREFIX=install -DEPIC_ECCE_LEGACY_COMPAT=OFF;cmake --build build;cmake --install build
 ```
-These commands are explained [https://github.com/eic/epic](here). Then source:
+These commands are explained [here](https://github.com/eic/epic). Then source:
 ```
 source install/setup.sh
 ```
