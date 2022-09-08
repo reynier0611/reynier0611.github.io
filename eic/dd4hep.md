@@ -137,3 +137,9 @@ And finally run a material scan to see if the change shows up:
 ```
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 ```
+
+### DD4HEP tutorials
+
+All links can be found [here](https://indico.bnl.gov/category/443/)
+
+- [1. EIC Software Tutorial: Setting up the EIC software environment (09/01/2022)](https://www.youtube.com/watch?v=Y0Mg24XLomY)
