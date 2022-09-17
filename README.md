@@ -58,6 +58,8 @@
 
 - **[Important 2022-23 Conferences](https://indico.cern.ch/event/1120106/contributions/4703309/attachments/2379961/4066282/conferences.pdf)**<br>
 
+- **[Countries I have been to](misc/countries.md)**<br>
+
 ## Fun links
 
 - **[A new map of the standard model of particle physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022/)**<br>
