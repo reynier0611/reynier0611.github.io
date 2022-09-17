@@ -143,3 +143,5 @@ materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 All links can be found [here](https://indico.bnl.gov/category/443/)
 
 - [1. Setting up the EIC software environment](https://www.youtube.com/watch?v=Y0Mg24XLomY)
+
+- [2. Geometry development using DD4hep: how to modify or add detector description](https://www.youtube.com/watch?v=RJAHnEW9cYk)
