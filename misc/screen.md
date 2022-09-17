@@ -25,4 +25,10 @@ To get back to the session:
 screen -r
 ```
 
+To fully remove a screen session, from inside of it do:
+
+```
+Ctrl+a :quit
+```
+
 see [https://linuxize.com/post/how-to-use-linux-screen/](https://linuxize.com/post/how-to-use-linux-screen/) for more details.
