@@ -42,6 +42,8 @@
 
 - **[LaTeX diff](misc/latex_diff.md)**<br>
 
+- **[screen command](misc/screen.md)**<br>
+
 - **[TREX LBNL](misc/trex.md)**<br>
 
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
