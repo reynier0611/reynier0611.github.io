@@ -109,7 +109,7 @@ time bash benchmarks/tracking/RCT_pions.sh
 ### Passing background hepmc file to DD4HEP GEANT simulation
 
 ```
-npsim --runType batch --numberOfEvents 100000 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile photon_100000_100ns_2um_gold_coating.edm4hep.root
+npsim --runType batch --numberOfEvents 100000 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile out_0um_new.edm4hep.root --random.seed 42
 ```
 
 ### Changing beampipe thickness

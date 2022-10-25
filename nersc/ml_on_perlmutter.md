@@ -1,4 +1,4 @@
-## Using Jupyter Notebooks  on Cori
+## ML shortcuts on Perlmutter
 [Back to table of Contents](../README.md)
 
 ML repo is [here](https://github.com/jdmulligan/ml-hadronization).
