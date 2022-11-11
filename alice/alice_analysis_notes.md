@@ -17,8 +17,13 @@ MathJax.Hub.Queue(function() {
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
-## Useful analysis notes
+## Useful analysis notes and papers
 [Back to table of Contents](../README.md)
+
+## Papers
+- [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
+    - hepdata tables: [https://www.hepdata.net/record/sandbox/1668138873](https://www.hepdata.net/record/sandbox/1668138873)
+- [RCT - Measurement of the angle between jet axes in Pb-Pb collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/8394)
 
 ### Mine
 - [RCT - Measurements of jet-axis differences in 0-10$\%$ Pb-Pb collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-notes.web.cern.ch/node/1300)
@@ -31,6 +36,4 @@ MathJax.Hub.Queue(function() {
 - [E. Lesser - Measurements of groomed generalized jet angularities in pp collisions at $\sqrt{s}=5.02$ TeV with ALICE](https://alice-notes.web.cern.ch/node/1119)
 - [J. Mulligan - Inclusive full jet measurements in Pb-Pb collisions at 5.02 TeV with ALICE](https://alice-notes.web.cern.ch/node/814)
 
-## Papers
-- [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
-- [RCT - Measurement of the angle between jet axes in Pb-Pb collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/8394)
+
