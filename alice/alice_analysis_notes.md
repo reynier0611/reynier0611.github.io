@@ -24,7 +24,7 @@ MathJax.Hub.Queue(function() {
 - [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)
     - hepdata tables: [https://www.hepdata.net/record/sandbox/1668138873](https://www.hepdata.net/record/sandbox/1668138873)
     - new hepdata tables: [https://www.hepdata.net/record/sandbox/1668582997](https://www.hepdata.net/record/sandbox/1668582997)
-    - arXiv: coming soon
+    - arXiv: [2211.08928](https://arxiv.org/pdf/2211.08928.pdf)
 
 - [RCT - Measurement of the angle between jet axes in Pb-Pb collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/8394)
 
