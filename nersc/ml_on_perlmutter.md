@@ -52,7 +52,7 @@ python steer_analysis.py --generate --inspect
 or read already generated events:
 
 ```
-python steer_analysis.py --read TestOutput/results.h5 --inspect
+python steer_analysis.py --read /pscratch/sd/r/reynier/training_data/data_jets_1K_events.h5 --inspect
 ```
 
 ### Some notes on the results:
