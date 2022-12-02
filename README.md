@@ -42,6 +42,8 @@
 
 - **[LaTeX diff](misc/latex_diff.md)**<br>
 
+- **[PRL word count](misc/prl_wordcount.md)**<br>
+
 - **[screen command](misc/screen.md)**<br>
 
 - **[TREX LBNL](misc/trex.md)**<br>
