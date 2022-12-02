@@ -5,12 +5,12 @@
 
 	- ```pip3 install latex_proj_tool```
 
-	- ```python3 -m latex_proj_tool flat my_project/main.tex --output flat_tex.tex```
+	- ```python3 -m latex_proj_tool flat my_project/main.tex --output out.tex```
 
 - Follow steps from [here](https://github.com/matteoacrossi/texprlcount) to do a word count on the flattened ```out.tex``` file:
 
 	- ```wget https://raw.githubusercontent.com/matteoacrossi/texprlcount/master/texprlcount.pl```
 
-	- ```perl texprlcount.pl flat_tex.tex```
+	- ```perl texprlcount.pl out.tex```
 
 - The PRL word limit as of today (Dec 2, 2022) is: ```3,750 words```.
