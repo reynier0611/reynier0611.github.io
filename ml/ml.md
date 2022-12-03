@@ -1,9 +1,11 @@
 ## Machine Learning
 [Back to table of Contents](../README.md)
 
+## [Pandas](pandas.md)
+
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
 
-### Scikit Learn
+## Scikit Learn
 
 - [Scaling data (Standard and MinMax scalers)](scaling_data.md)
 
@@ -24,7 +26,7 @@ from sklearn.metrics import error_metric
 performance = error_metric(y_test,predictions)
 ```
 
-### Keras / Tensorflow
+## Keras / Tensorflow
 
 ##### Choosing an optimizer and loss
 
