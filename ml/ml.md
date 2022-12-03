@@ -9,6 +9,21 @@
 
 - [Splitting data](splitting_data.md)
 
+- Classification models
+
+- Regression models
+
+##### Generic code:
+```python
+from sklearn.model_family import ModelAlgo
+mymodel = ModelAlgo(param1,param2)
+mymodel.fit(X_train,y_train)
+predictions = mymodel.predict(X_test)
+
+from sklearn.metrics import error_metric
+performance = error_metric(y_test,predictions)
+```
+
 ### Keras / Tensorflow
 
 ### Choosing an optimizer and loss
