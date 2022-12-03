@@ -46,6 +46,8 @@ model.compile(optimizer='rmsprop',
               loss='mse')
 ```
 
+- [Feed-forward NN and saving model](feedforward.md)
+
 ## Neural Nets
 
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
