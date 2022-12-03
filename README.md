@@ -34,6 +34,8 @@
 
 - **[DD4HEP on Cori](eic/dd4hep.md)**<br>
 
+## [Machine Learning](ml/ml.md)
+
 ## Useful Links
 
 - **[Installing software](misc/installing_software.md)**<br>
