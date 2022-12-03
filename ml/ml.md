@@ -5,7 +5,9 @@
 
 ### Scikit Learn
 
-- [Scaling data](scaling_data.md)
+- [Scaling data (Standard and MinMax scalers)](scaling_data.md)
+
+- [Splitting data](splitting_data.md)
 
 ### Keras / Tensorflow
 
