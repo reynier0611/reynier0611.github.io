@@ -3,6 +3,8 @@
 
 [Back to Machine Learning](ml.md)
 
+We can first fit the scaler (with the training data only) and the fit the training and testing data, or we can directy fit the scaler and transform the training data in one step, and then transform the test data. I show an example of each method below.
+
 #### Standard Scaler
 
 ```python
