@@ -3,8 +3,6 @@
 
 ## [Pandas](pandas.md)
 
-- [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
-
 ## Scikit Learn
 
 - [Scaling data (Standard and MinMax scalers)](scaling_data.md)
@@ -47,3 +45,7 @@ model.compile(optimizer='rmsprop',
 model.compile(optimizer='rmsprop',
               loss='mse')
 ```
+
+## Neural Nets
+
+- [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
