@@ -26,7 +26,7 @@ performance = error_metric(y_test,predictions)
 
 ### Keras / Tensorflow
 
-### Choosing an optimizer and loss
+##### Choosing an optimizer and loss
 
 Keep in mind what kind of problem you are trying to solve:
 
