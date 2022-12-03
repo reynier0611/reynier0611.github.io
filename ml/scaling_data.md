@@ -1,5 +1,6 @@
-## Machine Learning
+## Scaling the data
 [Back to table of Contents](../README.md)
+
 [Back to Machine Learning](ml.md)
 
 #### Standard Scaler
@@ -19,3 +20,4 @@ from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
+```
