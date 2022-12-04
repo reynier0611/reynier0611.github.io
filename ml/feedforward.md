@@ -17,7 +17,8 @@ model.add(Dense(1,'sigmoid'))
 
 model.compile(loss='binary_crossentropy',optimizer='adam')
 
-model.fit(x=X_train,y=y_train,epochs=30,verbose=0,batch_size=256,validation_data=(X_test,y_test))
+model.fit(x=X_train,y=y_train,epochs=30,verbose=0,batch_size=256,
+	      validation_data=(X_test,y_test))
 ```
 
 ##### Saving the model

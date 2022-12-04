@@ -9,9 +9,37 @@
 
 - [Splitting data](splitting_data.md)
 
-- Classification models
+- Grid search and cross validation
 
-- Regression models
+- Pipelines, saving and loading models
+
+- Supervised Learning
+
+    - Linear regression, Ridge, Lasso, Elastic net
+    
+    - Logistic regression
+    
+    - K Nearest Neighbors
+    
+    - Support Vector Machines (SVM)
+    
+    - Decision Trees, Random Forests, Boosting
+
+    - Naive Bayes
+    
+    - Classification performance evaluation
+    
+    - Regression performance evaluation
+
+- Unsupervised Learning
+
+    - K means clustering
+
+    - Hierarchical clustering
+
+    - DBSCAN
+
+    - Principal Component Analysis (PCA)
 
 ##### Generic code:
 ```python
@@ -25,6 +53,16 @@ performance = error_metric(y_test,predictions)
 ```
 
 ## Keras / Tensorflow
+
+##### Choosing an optimizer and loss
+
+Last layer of network:
+
+- Regression: no activation function with one neuron
+
+- Binary classification: ```sigmoid``` with one neuron
+
+- Multi-class classification: ```softmax``` with as many neurons as classes to predict
 
 ##### Choosing an optimizer and loss
 
