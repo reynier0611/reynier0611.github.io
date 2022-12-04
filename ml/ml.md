@@ -84,7 +84,10 @@ model.compile(optimizer='rmsprop',
               loss='mse')
 ```
 
+
 - [Feed-forward NN and saving model](feedforward.md)
+
+- [Convolutional NN (CNN)](cnn.md)
 
 ## Neural Nets
 
