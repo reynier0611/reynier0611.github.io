@@ -41,9 +41,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Conv2D, MaxPool2D, Flatten
 
 model = Sequential()
-model.add(Conv2D(filters=32,kernel_size=(4,4),
-                 padding='same',input_shape=(28,28,1),
-                 activation='relu'))
+model.add(Conv2D(filters=32,kernel_size=(4,4),padding='same',input_shape=(28,28,1),activation='relu'))
 model.add(MaxPool2D(pool_size=(2,2)))
 model.add(Flatten())
 model.add(Dense(128,activation='relu'))
@@ -72,4 +70,29 @@ metrics[['loss','val_loss']].plot()
 metrics[['accuracy','val_accuracy']].plot()
 
 predictions = np.argmax(model.predict(X_test),axis=-1)
+```
+
+### Example on CIFAR-10 dataset (color)
+
+```python
+model = Sequential()
+
+model.add(Conv2D(filters=32,kernel_size=(4,4),input_shape=(32,32,3), activation='relu'))
+model.add(MaxPool2D(pool_size=(2,2)))
+
+model.add(Conv2D(filters=32,kernel_size=(4,4),input_shape=(32,32,3), activation='relu'))
+model.add(MaxPool2D(pool_size=(2,2)))
+
+model.add(Flatten())
+model.add(Dense(256,activation='relu'))
+model.add(Dense(10,activation='softmax'))
+
+model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
+
+model.summary()
+
+from tensorflow.keras.callbacks import EarlyStopping
+early_stop = EarlyStopping(monitor='val_loss',patience=2)
+
+model.fit(X_train,y_cat_train,epochs=15, validation_data=(X_test,y_cat_test), callbacks=[early_stop])
 ```

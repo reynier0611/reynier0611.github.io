@@ -89,6 +89,6 @@ model.compile(optimizer='rmsprop',
 
 - [Convolutional NN (CNN)](cnn.md)
 
-## Neural Nets
+## Other useful links
 
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
