@@ -3,7 +3,7 @@
 
 [Back to Machine Learning](ml.md)
 
-#### Example with an elastic net model
+#### Example of grid search with an elastic net model
 
 Import the model for which parameters are to be optimized and create an instance.
 
@@ -41,4 +41,20 @@ Checking the results
 
 ```python
 pd.DataFrame(grid_model.cv_results_)
+```
+
+#### Cross_val_score
+
+```python
+from sklearn.model_selection import cross_val_score
+scores = cross_val_score(model,X_train,y_train,scoring='neg_mean_squared_error',cv=5)
+abs(scores.mean())
+```
+
+#### Cross_val_score
+
+```python
+from sklearn.model_selection import cross_validate
+scores = cross_validate(model,X_train,y_train,scoring=['neg_mean_squared_error',
+                                                      'neg_mean_absolute_error'],cv=10)
 ```
