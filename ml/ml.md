@@ -99,4 +99,6 @@ model.compile(optimizer='rmsprop',
 
 - [Selecting hyperparameters for convolutional NN](https://stats.stackexchange.com/questions/148139/rules-for-selecting-convolutional-neural-network-hyperparameters)
 
-- Activation functions
+- [Activation functions](https://www.v7labs.com/blog/neural-networks-activation-functions)
+
+- [(YOUTUBE) Data Analysis with Python Course - Numpy, Pandas, Data Visualization](https://www.youtube.com/watch?v=GPVsHOlRBBI)
