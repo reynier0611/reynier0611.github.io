@@ -5,9 +5,7 @@
 
 ## Scikit Learn
 
-- [Scaling data (Standard and MinMax scalers)](scaling_data.md)
-
-- [Splitting data](splitting_data.md)
+- [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
 
 - Grid search and cross validation
 
@@ -27,9 +25,7 @@
 
     - Naive Bayes
     
-    - Classification performance evaluation
-    
-    - Regression performance evaluation
+    - [Regression and classification performance metrics](supervised_metrics.md)
 
 - Unsupervised Learning
 

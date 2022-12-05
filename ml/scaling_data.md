@@ -1,7 +1,14 @@
-## Scaling the data
+## Splitting the data
 [Back to table of Contents](../README.md)
 
 [Back to Machine Learning](ml.md)
+
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=42)
+```
+
+## Scaling the data
 
 We can first fit the scaler (with the training data only) and the fit the training and testing data, or we can directy fit the scaler and transform the training data in one step, and then transform the test data. I show an example of each method below.
 
