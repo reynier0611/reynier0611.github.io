@@ -3,6 +3,17 @@
 
 [Back to Machine Learning](ml.md)
 
+Here we need the training and testing data as numpy arrays, not as pandas dataframes, for instance. Thus, if we have our data as pandas dataframes can do something like:
+
+```python
+X_train = X_train.values
+y_train = y_train.values
+X_test = X_test.values
+y_test = y_test.values
+```
+
+Below we create and compile the model, and then train it.
+
 ```python
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense,Dropout
