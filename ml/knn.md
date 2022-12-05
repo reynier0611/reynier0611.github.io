@@ -3,4 +3,15 @@
 
 [Back to Machine Learning](ml.md)
 
-- UNDER CONSTRUCTION. COME BACK LATER
+#### K Nearest Neighbors Classifier
+
+```python
+from sklearn.neighbors import KNeighborsClassifier
+knn_model = KNeighborsClassifier()
+```
+
+#### K Nearest Neighbors Regressor
+
+```python
+from sklearn.neighbors import KNeighborsRegressor
+```

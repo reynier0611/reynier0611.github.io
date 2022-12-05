@@ -10,3 +10,8 @@ np.sqrt(mean_squared_error(y_test,predictions))
 ```
 
 ## Classification Performance Metrics
+
+```python
+from sklearn.metrics import ConfusionMatrixDisplay
+from sklearn.metrics import RocCurveDisplay
+```
