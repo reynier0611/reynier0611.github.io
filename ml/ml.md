@@ -7,7 +7,7 @@
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
 
-- Grid search and cross validation
+- [Grid search and cross validation](gridsearch.md)
 
 - Pipelines, saving and loading models
 
@@ -88,3 +88,5 @@ model.compile(optimizer='rmsprop',
 ## Other useful links
 
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
+
+- [Selecting hyperparameters for convolutional NN](https://stats.stackexchange.com/questions/148139/rules-for-selecting-convolutional-neural-network-hyperparameters)

@@ -22,7 +22,7 @@ plot_tree(model, feature_names=X.columns, filled=True)
 from sklearn.ensemble import RandomForestClassifiera
 ```
 
-###### Random Forest Regressor
+###### Regressor
 
 ```python
 from sklearn.ensemble import RandomForestRegressor
