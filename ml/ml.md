@@ -102,3 +102,5 @@ model.compile(optimizer='rmsprop',
 - [Activation functions](https://www.v7labs.com/blog/neural-networks-activation-functions)
 
 - [(YOUTUBE) Data Analysis with Python Course - Numpy, Pandas, Data Visualization](https://www.youtube.com/watch?v=GPVsHOlRBBI)
+
+- [Universal Approximation Theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem)

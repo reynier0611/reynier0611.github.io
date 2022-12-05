@@ -66,6 +66,8 @@
 
 - **[Countries I have been to](misc/countries.md)**<br>
 
+- **[14 Must-Know pip Commands For Data Scientists and Engineers](https://towardsdatascience.com/14-must-know-pip-commands-for-data-scientists-and-engineers-a59ebbe0a439)**<br>
+
 ## Fun links
 
 - **[A new map of the standard model of particle physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022/)**<br>
