@@ -1,7 +1,15 @@
 ## Machine Learning
 [Back to table of Contents](../README.md)
 
-## [Pandas](pandas.md)
+## Important Libraries
+
+- [Pandas](pandas.md)
+
+- Numpy
+
+- Matplotlib
+
+- Seaborn
 
 ## Scikit Learn
 
