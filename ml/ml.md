@@ -15,15 +15,15 @@
 
 - Supervised Learning
 
-    - Linear regression, Ridge, Lasso, Elastic net
+    - [Linear regression, Ridge, Lasso, Elastic net. Polynomial features](linear.md)
     
-    - Logistic regression
+    - [Logistic regression](logistic.md)
     
-    - K Nearest Neighbors
+    - [K Nearest Neighbors](knn.md)
     
-    - Support Vector Machines (SVM)
+    - [Support Vector Machines (SVM)](svm.md)
     
-    - Decision Trees, Random Forests, Boosting
+    - [Decision Trees, Random Forests, Boosting](trees.md)
 
     - Naive Bayes
     
