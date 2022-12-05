@@ -51,7 +51,7 @@ scores = cross_val_score(model,X_train,y_train,scoring='neg_mean_squared_error',
 abs(scores.mean())
 ```
 
-#### Cross_val_score
+#### cross_validate
 
 ```python
 from sklearn.model_selection import cross_validate
