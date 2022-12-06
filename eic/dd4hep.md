@@ -143,7 +143,11 @@ And finally run a material scan to see if the change shows up:
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 ```
 
-### DD4HEP tutorials
+## Synchrotron radiation files
+
+input hepmc files stored in ```/global/project/projectdirs/m3763/reynier/DD4HEP/input_hepmc``` under the filename: ```out_int_window_100.0ns_nevents_100000_pid_22_Escale_x1.0_status_4_1_seed_1.hepmc``` where the last number before the ```.hepmc``` extension. These files are about 9 Gb each. The output Geant hit files are stored in ```/global/project/projectdirs/m3763/reynier/DD4HEP/generated_SR_background```.
+
+## DD4HEP tutorials
 
 All links can be found [here](https://indico.bnl.gov/category/443/)
 
