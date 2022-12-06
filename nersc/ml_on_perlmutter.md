@@ -35,7 +35,7 @@ ssh reynier@perlmutter-p1.nersc.gov
 screen -S ML
 salloc --nodes 1 --qos interactive --time 04:00:00 --constraint gpu --gpus 4 --account=alice_g
 cd ml-hadronization/;source init_perlmutter.sh
-python steer_analysis.py --read /pscratch/sd/r/reynier/data_jets_1M_events.h5 --analyze --outputDir /pscratch/sd/r/reynier/
+python steer_analysis.py --read /pscratch/sd/r/reynier/data_jets_1M_events.h5 --analyze --outputDir /pscratch/sd/r/reynier/training_output/ --configFile config.yaml
 ```
 
 then press Ctrl+A Ctrl+D to exit the screen session.
@@ -65,7 +65,7 @@ python steer_analysis.py --generate --inspect
 or read already generated events:
 
 ```bash
-python steer_analysis.py --read /pscratch/sd/r/reynier/training_data/data_jets_1K_events.h5 --inspect
+python steer_analysis.py --read /pscratch/sd/r/reynier/training_data/data_1k_events.h5 --inspect --configFile config.yaml
 ```
 
 ### Some notes on the results:
