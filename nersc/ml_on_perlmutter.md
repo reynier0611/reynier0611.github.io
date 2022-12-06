@@ -3,6 +3,12 @@
 
 ML repo is [here](https://github.com/jdmulligan/ml-hadronization).
 
+### Important directories on Perlmutter
+
+- training input data: ```/pscratch/sd/r/reynier/training_data/```
+
+- training output data ```/pscratch/sd/r/reynier/training_output/```
+
 ### Data generation on hiccup
 
 ```bash
@@ -34,14 +40,21 @@ python steer_analysis.py --read /pscratch/sd/r/reynier/data_jets_1M_events.h5 --
 
 then press Ctrl+A Ctrl+D to exit the screen session.
 
-### Copying files back to hiccup:
+###### Script for interactive job:
+can be found [here](https://github.com/jdmulligan/ml-hadronization/blob/main/sample_interactive_job.sh). Execute by doing:
 
 ```bash
-scp reynier@perlmutter-p1.nersc.gov:~/ml-hadronization/*.h5 .
-scp reynier@perlmutter-p1.nersc.gov:~/ml-hadronization/*.txt .
+sample_interactive_job.sh some_output_folder_name config_filename
 ```
 
-### Testing trained model on hiccup:
+###### Script for slurm job:
+can be found [here](https://github.com/jdmulligan/ml-hadronization/blob/main/slurm/slurm.sh). Open script, change name for output directory and point to right config file, and then do:
+
+```bash
+sbatch slurm.sh
+```
+
+### Testing trained model:
 
 Generate new events:
 
@@ -91,4 +104,11 @@ pix2pix_Brownlee_jetimage:
   learning_rate: 0.0002
   beta_1: 0.5
   observables_per_pixel: ['constit_z','constit_z','constit_z']
+```
+
+### Copying files back to hiccup:
+
+```bash
+scp reynier@perlmutter-p1.nersc.gov:~/ml-hadronization/*.h5 .
+scp reynier@perlmutter-p1.nersc.gov:~/ml-hadronization/*.txt .
 ```
