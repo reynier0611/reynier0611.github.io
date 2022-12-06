@@ -33,7 +33,7 @@ cd /global/project/projectdirs/m3763/reynier/DD4HEP
 - From time to time update the image by doing:
 
 ```bash
-shifterimg pull eicweb/jug_xl:nightly # From time to time, to update the image
+shifterimg pull eicweb/jug_xl:nightly
 ```
 
 #### Testing:
