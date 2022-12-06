@@ -7,7 +7,7 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 
 ### Getting DD4HEP working on Cori
 
-#### First time:
+##### First time:
 
 ssh into Cori, go to a convenient directory, and run:
 ```bash
@@ -18,17 +18,22 @@ source /opt/detector/setup.sh
 cd /global/project/projectdirs/m3763/reynier/
 mkdir DD4HEP # ONLY THE FIRST TIME
 cd DD4HEP
-git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git # ONLY THE FIRST TIME
+git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
 ```
 
-#### Subsequent times:
+##### Subsequent times:
 
 ```bash
-shifterimg pull eicweb/jug_xl:nightly # From time to time, to update the image
 shifter --image=eicweb/jug_xl:nightly /bin/bash
 eic-shell
 source /opt/detector/setup.sh
 cd /global/project/projectdirs/m3763/reynier/DD4HEP
+```
+
+- From time to time update the image by doing:
+
+```bash
+shifterimg pull eicweb/jug_xl:nightly # From time to time, to update the image
 ```
 
 #### Testing:
