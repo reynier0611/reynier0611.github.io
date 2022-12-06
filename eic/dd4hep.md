@@ -10,7 +10,7 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 #### First time:
 
 ssh into Cori, go to a convenient directory, and run:
-```
+```bash
 shifterimg pull eicweb/jug_xl:nightly
 shifter --image=eicweb/jug_xl:nightly /bin/bash
 eic-shell
@@ -23,7 +23,7 @@ git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.gi
 
 #### Subsequent times:
 
-```
+```bash
 shifterimg pull eicweb/jug_xl:nightly # From time to time, to update the image
 shifter --image=eicweb/jug_xl:nightly /bin/bash
 eic-shell
@@ -34,7 +34,7 @@ cd /global/project/projectdirs/m3763/reynier/DD4HEP
 #### Testing:
 
 Try the following commands, which run 100 pions:
-```
+```bash
 cd reconstruction_benchmarks/
 bash benchmarks/tracking/central_pions.sh
 ```
@@ -47,14 +47,14 @@ This produces several root files, e.g.:
 In the events tree we can find some of the useful variables:
 
 Generated:
-```
+```bash
 MCParticles.momentum.x = 0.000000, 0.000000, -2.105457
 MCParticles.momentum.y = 0.000000, 0.000000, 1.102192
 MCParticles.momentum.z = 10.000000, 0.000000, -0.241078
 ```
 
 The first two entries are the electron and proton kinematics. Here are the reconstructed ones:
-```
+```bash
 ReconstructedParticles.p.x = -2.093476
 ReconstructedParticles.p.y = 1.124782
 ReconstructedParticles.p.z = -0.241075
@@ -69,7 +69,7 @@ Yue Shi sent us two codes for the updated realistic seeding: ```TrackParamACTSSe
 2. Update ```TrackParamACTSSeeding.cpp``` with the file from Yue Shi:
 ```cp ~/TrackParamACTSSeeding.cpp juggler/JugTrack/src/components/```
 3. Compile this new juggler version:
-```
+```bash
 mkdir local
 ATHENA_PREFIX=/project/projectdirs/alice/reynier/eic/
 mkdir build; cd build
@@ -86,7 +86,7 @@ mv ../track_reconstruction.py reconstruction_benchmarks/benchmarks/tracking/opti
 
 ### Running a batch job
 
-```
+```bash
 cd /global/project/projectdirs/m3763/reynier/DD4HEP/reconstruction_benchmarks/slurm_scripts
 sbatch 1_slurm_test.sh
 ```
@@ -100,7 +100,7 @@ This script collects all the necessary slurm information and runs ```2_run_test_
 
 ### Tests
 
-```
+```bash
 time bash benchmarks/tracking/RCT_pions.sh
 ```
 
@@ -108,13 +108,13 @@ time bash benchmarks/tracking/RCT_pions.sh
 
 ### Passing background hepmc file to DD4HEP GEANT simulation
 
-```
+```bash
 npsim --runType batch --numberOfEvents 100000 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile out_0um_new.edm4hep.root --random.seed 42
 ```
 
 ### Changing beampipe thickness
 
-```
+```bash
 cd /project/projectdirs/alice/reynier/eic
 mkdir repos; cd repos
 git clone https://github.com/eic/ip6.git
@@ -122,19 +122,19 @@ cd /project/projectdirs/alice/reynier/eic/repos/ip6
 vim ip6/central_beampipe.xml
 ```
 change the gold coating. For example, set:
-```
+```bash
 gold_thickness="1e-10*um"
 ```
 Then compile this change:
-```
+```bash
 cmake -B build -S . -DCMAKE_INSTALL_PREFIX=install -DEPIC_ECCE_LEGACY_COMPAT=OFF;cmake --build build;cmake --install build
 ```
 These commands are explained [here](https://github.com/eic/epic). Then source:
-```
+```bash
 source install/setup.sh
 ```
 And finally run a material scan to see if the change shows up:
-```
+```bash
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 ```
 
