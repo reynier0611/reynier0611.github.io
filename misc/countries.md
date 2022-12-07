@@ -3,7 +3,7 @@
 
 - Cuba
 
-- USA
+- USA :us:
 
 - Canada
 
