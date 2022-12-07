@@ -8,7 +8,7 @@
 
 - **[Notes on pyjetty structure](alice/pyjetty_structure.md)**<br>
 
-## ALICE <img src="img/alice_logo.jpg" width="65" height="50" />
+## ALICE <img src="img/alice_logo.jpg" width="40" height="40" />
 
 - **[ALICE analysis notes and papers](alice/alice_analysis_notes.md)**<br>
 
