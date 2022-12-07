@@ -2,6 +2,10 @@
 
 ## LBL
 
+<img src="img/lbl_logo"
+    style="width: 50%;"
+    style="float: left; margin-right: 10px;" />
+
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
 
 - **[Data on hiccup and fastsim](alice/hiccup_data_and_fastsim.md)**<br>
