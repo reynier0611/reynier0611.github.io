@@ -2,7 +2,7 @@
 
 ## LBL
 
-<img src="img/lbl_logo"
+<img src="img/lbl_logo.jpg"
     style="width: 50%;"
     style="float: left; margin-right: 10px;" />
 
