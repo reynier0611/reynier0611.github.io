@@ -11,7 +11,7 @@
 
 - Seaborn
 
-## Scikit Learn
+## Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
 
@@ -56,7 +56,7 @@ from sklearn.metrics import error_metric
 performance = error_metric(y_test,predictions)
 ```
 
-## Keras / Tensorflow
+## Keras / Tensorflow <img src="../img/tf_logo.jpg" width="40" height="40" style="float: right;" />
 
 ##### Choosing an optimizer and loss
 
