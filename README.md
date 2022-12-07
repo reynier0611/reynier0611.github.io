@@ -1,6 +1,6 @@
 # Table of Content
 
-## LBL <img src="img/lbl_logo.jpg" width="65" height="50" />
+## LBL <img src="img/lbl_logo.jpg" width="45" height="40" style="float: right;" />
 
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
 
@@ -26,7 +26,7 @@
 
 - **[ML on Perlmutter](nersc/ml_on_perlmutter.md)**<br>
 
-## EIC
+## EIC <img src="img/eic_logo.jpg" width="45" height="40" style="float: right;" />
 
 - **[EIC Links](eic/eic_links.md)**<br>
 
