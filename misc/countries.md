@@ -1,24 +1,24 @@
 ## Countries I have been to
 [Back to table of Contents](../README.md)
 
-- Cuba
+- Cuba 🇨🇺
 
 - USA 🇺🇸
 
-- Canada
+- Canada 🇨🇦
 
-- Bahamas
+- Bahamas 🇧🇸
 
-- Israel
+- Israel 🇮🇱
 
-- Slovenia
+- Slovenia 🇸🇮
 
-- Russia
+- Russia 🇷🇺
 
-- Italy
+- Italy 🇮🇹
 
-- Scotland
+- Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇬🇧
 
-- Switzerland
+- Switzerland 🇨🇭
 
-- France
+- France 🇫🇷
