@@ -1,8 +1,8 @@
 # Table of Content
 
-## LBL
+<img src="img/lbl_logo.jpg" width="60" height="50" />
 
-<img src="img/lbl_logo.jpg" width="50" height="50" />
+## LBL
 
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
 
