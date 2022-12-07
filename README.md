@@ -2,9 +2,7 @@
 
 ## LBL
 
-<img src="img/lbl_logo.jpg"
-    style="width: 20%;"
-    style="float: left; margin-right: 10px;" />
+<img src="img/lbl_logo.jpg" width="50" height="50" />
 
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
 
