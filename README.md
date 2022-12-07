@@ -8,7 +8,7 @@
 
 - **[Notes on pyjetty structure](alice/pyjetty_structure.md)**<br>
 
-## ALICE <img src="img/alice_logo.jpg" width="40" height="40" />
+## ALICE <img src="img/alice_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[ALICE analysis notes and papers](alice/alice_analysis_notes.md)**<br>
 
@@ -18,7 +18,7 @@
 
 - **[JSUB Coordination](alice/jsub.md)**<br>
 
-## NERSC
+## NERSC <img src="img/nersc_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[Installing Software](nersc/installing_root.md)**<br>
 
