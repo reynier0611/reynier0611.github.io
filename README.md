@@ -1,6 +1,6 @@
 # Table of Content
 
-## LBL <img src="img/lbl_logo.jpg" width="45" height="40" style="float: right;" />
+## LBL <img src="img/lbl_logo.jpg" width="50" height="40" style="float: right;" />
 
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**<br>
 
@@ -26,7 +26,7 @@
 
 - **[ML on Perlmutter](nersc/ml_on_perlmutter.md)**<br>
 
-## EIC <img src="img/eic_logo.jpg" width="45" height="40" style="float: right;" />
+## EIC <img src="img/eic_logo.jpg" width="50" height="40" style="float: right;" />
 
 - **[EIC Links](eic/eic_links.md)**<br>
 
@@ -64,10 +64,10 @@
 
 - **[Important 2022-23 Conferences](https://indico.cern.ch/event/1120106/contributions/4703309/attachments/2379961/4066282/conferences.pdf)**<br>
 
-- **[Countries I have been to](misc/countries.md)**<br>
-
 - **[14 Must-Know pip Commands For Data Scientists and Engineers](https://towardsdatascience.com/14-must-know-pip-commands-for-data-scientists-and-engineers-a59ebbe0a439)**<br>
 
 ## Fun links
+
+- **[Countries I have been to](misc/countries.md)**<br>
 
 - **[A new map of the standard model of particle physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022/)**<br>
