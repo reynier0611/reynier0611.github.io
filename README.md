@@ -34,7 +34,7 @@
 
 - **[DD4HEP on Cori](eic/dd4hep.md)**<br>
 
-## [Machine Learning](ml/ml.md)
+## [Machine Learning](ml/ml.md) <img src="img/ml_logo.jpg" width="40" height="40" style="float: right;" />
 
 ## Useful Links
 
