@@ -1,7 +1,5 @@
 ## Machine Learning
-[![Back to table of Contents]][../README.md]
-
-[![button](test)](../README.md)
+[Back to table of Contents](../README.md)
 
 ### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
