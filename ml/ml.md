@@ -1,7 +1,7 @@
 ## Machine Learning
 [Back to table of Contents](../README.md)
 
-## Important Libraries
+### Important Libraries
 
 - [Pandas](pandas.md)
 
@@ -11,13 +11,13 @@
 
 - Seaborn
 
-## Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
+### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
 
 - [Grid search and cross validation](gridsearch.md)
 
-- Pipelines, saving and loading models
+- [Pipelines, saving and loading models](pipe.md)
 
 - Supervised Learning
 
@@ -56,7 +56,7 @@ from sklearn.metrics import error_metric
 performance = error_metric(y_test,predictions)
 ```
 
-## Keras / Tensorflow <img src="../img/tf_logo.jpg" width="40" height="40" style="float: right;" />
+### Keras / Tensorflow <img src="../img/tf_logo.jpg" width="40" height="40" style="float: right;" />
 
 ##### Choosing an optimizer and loss
 
@@ -93,7 +93,9 @@ model.compile(optimizer='rmsprop',
 
 - [Convolutional NN (CNN)](cnn.md)
 
-## Other useful links
+- [Recurring NN (RNN)](rnn.md)
+
+### Other useful links
 
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
 
