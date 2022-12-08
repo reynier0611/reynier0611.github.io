@@ -1,16 +1,6 @@
 ## Machine Learning
 [Back to table of Contents](../README.md)
 
-### Important Libraries
-
-- [Pandas](pandas.md)
-
-- Numpy
-
-- Matplotlib
-
-- Seaborn
-
 ### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
@@ -94,6 +84,16 @@ model.compile(optimizer='rmsprop',
 - [Convolutional NN (CNN)](cnn.md)
 
 - [Recurring NN (RNN)](rnn.md)
+
+### Important Libraries
+
+- [Pandas](pandas.md)
+
+- Numpy
+
+- Matplotlib
+
+- Seaborn
 
 ### Other useful links
 
