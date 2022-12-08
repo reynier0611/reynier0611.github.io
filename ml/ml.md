@@ -1,6 +1,8 @@
 ## Machine Learning
 [Back to table of Contents](../README.md)
 
+<button name="button">Click me</button>
+
 ### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
