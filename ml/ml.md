@@ -2,6 +2,8 @@
 
 <button onclick="window.location.href='https://reynier0611.github.io';">Back to Table of Content</button>
 
+<a><button name="button" style = "color: red" onclick="cd ../README.md">BACK</button></a>
+
 ### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
