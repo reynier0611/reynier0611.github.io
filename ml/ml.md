@@ -49,7 +49,7 @@ performance = error_metric(y_test,predictions)
 
 ### Keras / Tensorflow <img src="../img/tf_logo.jpg" width="40" height="40" style="float: right;" />
 
-##### Choosing an optimizer and loss
+##### Choosing the activation function of the last layer
 
 Last layer of network:
 
