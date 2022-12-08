@@ -1,7 +1,6 @@
 ## Machine Learning
-[Back to table of Contents](../README.md)
 
-<button onclick="window.location.href='https://reynier0611.github.io';">Click</button>
+<button onclick="window.location.href='https://reynier0611.github.io';">Back to Table of Content</button>
 
 ### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
