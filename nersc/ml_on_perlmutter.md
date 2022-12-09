@@ -1,5 +1,6 @@
 ## ML shortcuts on Perlmutter
-[Back to table of Contents](../README.md)
+
+[<a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a>
 
 ML repo is [here](https://github.com/jdmulligan/ml-hadronization).
 
@@ -8,18 +9,6 @@ ML repo is [here](https://github.com/jdmulligan/ml-hadronization).
 - training input data: ```/pscratch/sd/r/reynier/training_data/```
 
 - training output data ```/pscratch/sd/r/reynier/training_output/```
-
-### Data generation on hiccup
-
-```bash
-ssh -Y rey@hic.lbl.gov
-srun -N 1 -n 20 -t 2:00:00 -p quick --pty bash
-cd ml_hadronization/ml-hadronization/
-source init.sh
-cd ml_hadronization/ml-hadronization/ # previous line kicks me back to home directory
-python steer_analysis.py --generate --write --outputDir /rstorage/alice/AnalysisResults/rey/ml/data
-scp /rstorage/alice/AnalysisResults/rey/ml/data/results.h5 reynier@perlmutter-p1.nersc.gov:/pscratch/sd/r/reynier/
-```
 
 if need more time than two hours:
 
@@ -106,7 +95,19 @@ pix2pix_Brownlee_jetimage:
   observables_per_pixel: ['constit_z','constit_z','constit_z']
 ```
 
-### Copying files back to hiccup:
+### Data generation on hiccup
+
+```bash
+ssh -Y rey@hic.lbl.gov
+srun -N 1 -n 20 -t 2:00:00 -p quick --pty bash
+cd ml_hadronization/ml-hadronization/
+source init.sh
+cd ml_hadronization/ml-hadronization/ # previous line kicks me back to home directory
+python steer_analysis.py --generate --write --outputDir /rstorage/alice/AnalysisResults/rey/ml/data
+scp /rstorage/alice/AnalysisResults/rey/ml/data/results.h5 reynier@perlmutter-p1.nersc.gov:/pscratch/sd/r/reynier/
+```
+
+### Copying files from Perlmutter to hiccup:
 
 ```bash
 scp reynier@perlmutter-p1.nersc.gov:~/ml-hadronization/*.h5 .
