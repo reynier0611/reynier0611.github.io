@@ -95,7 +95,7 @@ test['predictions'] = preds
 
 See below an example of forecast (orange) after training on the (blue) data:
 
-<img src="img/rnn_forecast.jpg" width="500" height="200" style="float: center;" />
+<img src="img/rnn_forecast.jpg" width="400" height="200" style="float: center;" />
 
 #### Multi-Variate Time Series
 
