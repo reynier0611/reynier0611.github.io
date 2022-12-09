@@ -90,11 +90,11 @@ model.compile(optimizer='rmsprop',
 
 - [Pandas](pandas.md)
 
-- Numpy
+- [Numpy](numpy.md)
 
-- Matplotlib
+- [Matplotlib](matplotlib.md)
 
-- Seaborn
+- [Seaborn](seaborn.md)
 
 ## Other useful links
 
