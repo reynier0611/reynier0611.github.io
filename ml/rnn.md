@@ -95,4 +95,4 @@ test['predictions'] = preds
 
 See below an example of forecast (orange) after training on the (blue) data:
 
-<img src="img/rnn_forecast.jpg" width="8000" height="5000" style="float: center;" />
+<img src="img/rnn_forecast.jpg" width="800" height="500" style="float: center;" />
