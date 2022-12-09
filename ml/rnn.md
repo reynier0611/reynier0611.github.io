@@ -34,7 +34,8 @@ and create a time series generator with length of 20 months and a batch size of 
 from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
 length = 20
 batch_size = 1
-generator = TimeseriesGenerator(scaled_train,scaled_train, length=length, batch_size=batch_size)
+generator = TimeseriesGenerator(scaled_train,scaled_train,
+                           length=length,batch_size=batch_size)
 ```
 
 Create the model. Here we will use a Long Short-Term Memory ([LSTM](https://keras.io/api/layers/recurrent_layers/lstm/)) layer. Alternatively we could have used a [SimpleRNN](https://keras.io/api/layers/recurrent_layers/simple_rnn/) layer, but LSTM tends to work better:
@@ -54,7 +55,8 @@ model.compile(loss='mse',optimizer='adam')
 Let's now create a validation generator with the test data:
 
 ```python
-test_generator = TimeseriesGenerator(scaled_test,scaled_test,length=length,batch_size=batch_size)
+test_generator = TimeseriesGenerator(scaled_test,scaled_test,
+                                    length=length,batch_size=batch_size)
 ```
 
 Create and early stop callback and train the model:
