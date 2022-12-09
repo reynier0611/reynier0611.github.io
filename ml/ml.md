@@ -82,9 +82,9 @@ model.compile(optimizer='rmsprop',
 
 - [Feed-forward NN and saving model](feedforward.md)
 
-- [Convolutional NN (CNN)](cnn.md)
+- [Convolutional NN (CNN) for Image Classification](cnn.md)
 
-- [Recurring NN (RNN)](rnn.md)
+- [Recurring NN (RNN) for Time Series Forecasting](rnn.md)
 
 ## Important Libraries
 
