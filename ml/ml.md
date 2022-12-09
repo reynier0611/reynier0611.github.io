@@ -1,8 +1,8 @@
-## Machine Learning
+# Machine Learning
 
 <a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a>
 
-### Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
+## Scikit Learn <img src="../img/sklearn_logo.jpg" width="70" height="40" style="float: right;" />
 
 - [Splitting and scaling the data (Standard and MinMax scalers)](scaling_data.md)
 
@@ -47,7 +47,7 @@ from sklearn.metrics import error_metric
 performance = error_metric(y_test,predictions)
 ```
 
-### Keras / Tensorflow <img src="../img/tf_logo.jpg" width="40" height="40" style="float: right;" />
+## Keras / Tensorflow <img src="../img/tf_logo.jpg" width="40" height="40" style="float: right;" />
 
 ##### Choosing the activation function of the last layer
 
@@ -86,7 +86,7 @@ model.compile(optimizer='rmsprop',
 
 - [Recurring NN (RNN)](rnn.md)
 
-### Important Libraries
+## Important Libraries
 
 - [Pandas](pandas.md)
 
@@ -96,7 +96,7 @@ model.compile(optimizer='rmsprop',
 
 - Seaborn
 
-### Other useful links
+## Other useful links
 
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
 
