@@ -34,7 +34,7 @@
 
     - DBSCAN
 
-    - Principal Component Analysis (PCA)
+    - [Principal Component Analysis (PCA)](pca.md)
 
 ##### Generic code:
 ```python
