@@ -2,7 +2,7 @@
 
 <a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a> <a><button name="button" style = "color:blue;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io/ml/ml.html';">**Back to ML**</button></a>
 
-#### Single-variate RNN
+#### Single-Variate Time Series
 
 Imagine we are loading a csv file with two columns. The first one is a date-time string (called ```DATE```, and the second one is the value we want to forecast. The following command loads the csv file into a dataframe and assigns the date-time info to the index. Setting ```parse_dates=True``` ensures the date-time information is read in as a date-time object and not as a string:
 
@@ -95,4 +95,11 @@ test['predictions'] = preds
 
 See below an example of forecast (orange) after training on the (blue) data:
 
-<img src="img/rnn_forecast.jpg" width="800" height="500" style="float: center;" />
+<img src="img/rnn_forecast.jpg" width="600" height="300" style="float: center;" />
+
+#### Multi-Variate Time Series
+
+The two changes we need here are:
+
+1. Change input shape in LSTM layer to reflect the higher dimensionality
+2. Final dense layer should have a neuron per feature.
