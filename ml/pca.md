@@ -2,7 +2,7 @@
 
 <a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a> <a><button name="button" style = "color:blue;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io/ml/ml.html';">**Back to ML**</button></a>
 
-```pythia
+```python
 from sklearn.decomposition import PCA
 
 pca_model = PCA(n_components=2)
@@ -13,7 +13,7 @@ pca_model.explained_variance_ratio_
 
 Elbow method to determine optimal number of components
 
-```pythia
+```python
 explained_variance = []
 
 for n in range(1,30):
