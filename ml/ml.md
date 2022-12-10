@@ -86,6 +86,12 @@ model.compile(optimizer='rmsprop',
 
 - [Recurring NN (RNN) for Time Series Forecasting](rnn.md)
 
+- [Gated Recurrent Unit (GRU) for NLP](gru.md)
+
+- [Autoencoders](auto.md)
+
+- [Generative Adversarial Network (GAN)](gan.md)
+
 ## Important Libraries
 
 - [Pandas](pandas.md)
