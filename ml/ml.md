@@ -28,7 +28,7 @@
 
 - Unsupervised Learning
 
-    - K means clustering
+    - [K means clustering](kmeans.md)
 
     - Hierarchical clustering
 

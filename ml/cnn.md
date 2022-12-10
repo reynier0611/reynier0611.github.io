@@ -11,6 +11,12 @@ from tensorflow.keras.datasets import mnist
 (X_train,y_train),(X_test,y_test) = mnist.load_data()
 ```
 
+To load images from a directory:
+
+```python
+plt.imread('path/to/file.png')
+```
+
 The categories in this case come as 1,7,0,3,5,... but we need to one-hot encode these, and that can be done with tensorflow:
 
 ```python
