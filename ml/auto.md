@@ -42,3 +42,51 @@ encoded_2dim = encoder.predict(scaled_data)
 ```
 
 #### Autoencoder for image noise reduction
+
+Create and compile the model:
+
+```python
+from tensorflow.keras.layers import GaussianNoise
+
+encoder = Sequential()
+encoder.add(Flatten(input_shape=[28,28]))
+encoder.add(GaussianNoise(0.2)) # Adding noise to input image
+encoder.add(Dense(400,activation='relu'))
+encoder.add(Dense(200,activation='relu'))
+encoder.add(Dense(100,activation='relu'))
+encoder.add(Dense(50,activation='relu'))
+encoder.add(Dense(25,activation='relu'))
+
+decoder = Sequential()
+decoder.add(Dense(50,activation='relu',input_shape=[25]))
+decoder.add(Dense(100,activation='relu'))
+decoder.add(Dense(200,activation='relu'))
+decoder.add(Dense(400,activation='relu'))
+decoder.add(Dense(784,activation='sigmoid'))
+decoder.add(Reshape([28,28]))
+
+noise_remover = Sequential([encoder,decoder])
+
+noise_remover.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+```
+
+Fit the model and use it to generate 10 de-noised images:
+
+```python
+noise_remover.fit(X_train,X_train,epochs=8)
+
+ten_noisey_images = sample(X_test[:10],training=True)
+denoised = noise_remover(ten_noisey_images)
+```
+
+Check the effect on these images:
+
+```python
+n = 4
+fix,ax = plt.subplots(ncols=3,figsize=(15,5))
+ax[0].imshow(X_test[n])
+ax[1].imshow(ten_noisey_images[n])
+ax[2].imshow(denoised[n])
+```
+
+<img src="img/autoencoder2.jpg" width="3000" height="100" style="float: center;" />

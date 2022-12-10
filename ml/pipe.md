@@ -23,9 +23,15 @@ Saving:
 ```python
 from joblib import dump
 dump(final_model,'trained_model.joblib')
+dump(list(X.columns),'colnames.pkl')
 ```
+
+Loading:
 
 ```python
 from joblib import load
 loaded_model = load('trained_model.joblib')
+new_columns = joblib.load('colnames.pkl')
 ```
+
+* sometimes it is useful to save the column names for the dataframe. This is not strictly needed though.
