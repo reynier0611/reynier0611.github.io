@@ -89,4 +89,4 @@ ax[1].imshow(ten_noisey_images[n])
 ax[2].imshow(denoised[n])
 ```
 
-<img src="img/autoencoder2.jpg" width="3000" height="100" style="float: center;" />
+<img src="img/autoencoder2.jpg" width="300" height="100" style="float: center;" />
