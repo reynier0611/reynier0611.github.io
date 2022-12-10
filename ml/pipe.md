@@ -4,6 +4,17 @@
 
 ### Pipelines
 
+```python
+from sklearn.pipeline import Pipeline
+operations = [('scaler',scaler),('knn',knn)]
+pipe = Pipeline(operations)
+k_values=list(range(1,20))
+param_grid = {'knn__n_neighbors':k_values}
+
+from sklearn.model_selection import GridSearchCV
+full_cv_classifier = GridSearchCV(pipe,param_grid,cv=5,scoring='accuracy')
+full_cv_classifier.fit(scaled_X_train,y_train)
+```
 
 ### Saving and loading models
 
