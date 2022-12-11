@@ -38,7 +38,7 @@
 
 - **[ML Notes and Shortcuts](ml/ml.md)**<br>
 
-## [Structured Query Language (SQL)] <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
+## Structured Query Language (SQL) <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[SQL Notes and Shortcuts](sql.md)**<br>
 
