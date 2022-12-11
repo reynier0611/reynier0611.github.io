@@ -18,7 +18,9 @@ np.arange(start=0,stop=10,step=2)
 
 returns: ```array([0,2,4,6,8])```
 
-#### Zeros and Ones:
+#### zeros and Ones:
+
+* zeros
 
 ```python
 np.zeros((3,4))
@@ -28,9 +30,11 @@ returns:
 
 ```
 array([[0.,0.,0.,0.],
-[0.,0.,0.,0.],
-[0.,0.,0.,0.]])
+	[0.,0.,0.,0.],
+	[0.,0.,0.,0.]])
 ```
+
+* ones
 
 ```python
 np.ones((3))
@@ -42,6 +46,8 @@ returns:
 array([1.,1.,1.])
 ```
 
+* another arbitrary number by multiplying times ones
+
 ```python
 np.ones((4))*5
 ```
@@ -52,7 +58,7 @@ returns:
 array([5.,5.,5.,5.])
 ```
 
-#### Linspace:
+#### linspace:
 
 Evenly spaced numbers over a specified interval. Includes stop value.
 
