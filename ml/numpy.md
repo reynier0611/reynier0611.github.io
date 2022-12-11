@@ -84,8 +84,8 @@ returns
 
 ```
 array([[1., 0., 0.],
-   [0., 1., 0.],
-   [0., 0., 1.]])
+	[0., 1., 0.],
+	[0., 0., 1.]])
 ```
 
 #### Percentiles
@@ -99,8 +99,23 @@ q75, q25 = np.percentile(sample,[75,25])
 ```python
 arr = np.arange(24)
 arr.shape # --> (25,)
-arr = arr.reshape(5,5)
+arr = arr.reshape(5,5) # Not permanent. Need to reassign.
 arr.shape # --> (5,5)
+```
+
+### max and argmax:
+
+```python
+arr.max() # --> Returns max value in the array
+arr.argmax() # --> Returns the index location of the max value in the array
+```
+
+- similar with min and argmin.
+
+### Data types:
+
+```python
+arr.dtype # --> Returns, e.g.dtype('int32')
 ```
 
 ### Random sampling
