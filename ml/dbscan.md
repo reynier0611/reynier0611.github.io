@@ -6,9 +6,13 @@ Density based. Very good for non-linearly-separable distributions.
 
 ```python
 from sklearn.cluster import DBSCAN
+
+labels = model.fit_predict(data)
+model = DBSCAN(eps=0.15)
+sns.scatterplot(data=data,x='X1',y='X2',hue=labels,palette='Set1')
 ```
 
-<img src="img/dbscan.jpg" width="300" height="100" style="float: center;" />
+<img src="img/dbscan.jpg" width="500" height="200" style="float: center;" />
 
 ```python
 outlier_percent = []
@@ -24,4 +28,4 @@ for eps in np.linspace(0.001,10,100):
 sns.lineplot(x=np.linspace(0.001,10,100),y=number_of_outliers)
 ```
 
-<img src="img/dbscan_elbow.jpg" width="300" height="100" style="float: center;" />
+<img src="img/dbscan_elbow.jpg" width="500" height="100" style="float: center;" />
