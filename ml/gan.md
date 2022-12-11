@@ -123,3 +123,9 @@ for i in range(4):
 ```
 
 <img src="img/gan1.jpg" width="400" height="100" style="float: center;" />
+
+This is an example of mode collapse: these images look very similar. This can be alleviated with Deep Convolutional GANs.
+
+#### Deep Convolutional GAN:
+
+
