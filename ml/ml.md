@@ -94,9 +94,9 @@ model.compile(optimizer='rmsprop',
 
 ## Important Libraries
 
-- [Pandas](pandas.md)
-
 - [Numpy](numpy.md)
+
+- [Pandas](pandas.md)
 
 - [Matplotlib](matplotlib.md)
 
