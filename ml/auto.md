@@ -14,7 +14,7 @@ from tensorflow.keras.optimizers import SGD
 
 This model will have an encoder that compresses the data from 3 dimensions to 2, and then a decoder that expands from 2 back to 3 dimensions, as shown in the diagram below:
 
-<img src="img/autoencoder.jpg" width="150" height="100" style="float: center;" />
+<img src="img/autoencoder.jpg" width="130" height="100" style="float: center;" />
 
 ```python
 encoder = Sequential()
