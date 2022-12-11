@@ -34,9 +34,13 @@
 
 - **[DD4HEP on Cori](eic/dd4hep.md)**<br>
 
-## [Machine Learning](ml/ml.md) <img src="img/ml_logo.jpg" width="40" height="40" style="float: right;" />
+## Machine Learning <img src="img/ml_logo.jpg" width="40" height="40" style="float: right;" />
 
-## [Structured Query Language (SQL)](sql.md) <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
+- **[ML Notes and Shortcuts](ml/ml.md)**<br>
+
+## [Structured Query Language (SQL)] <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
+
+- **[SQL Notes and Shortcuts](sql.md)**<br>
 
 ## Useful Links
 
