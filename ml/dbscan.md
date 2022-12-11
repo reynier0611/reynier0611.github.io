@@ -7,8 +7,9 @@ Density based. Very good for non-linearly-separable distributions.
 ```python
 from sklearn.cluster import DBSCAN
 
-labels = model.fit_predict(data)
 model = DBSCAN(eps=0.15)
+labels = model.fit_predict(data)
+
 sns.scatterplot(data=data,x='X1',y='X2',hue=labels,palette='Set1')
 ```
 

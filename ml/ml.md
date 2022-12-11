@@ -22,7 +22,7 @@
     
     - [Decision Trees, Random Forests, Boosting](trees.md)
 
-    - Naive Bayes
+    - [Naive Bayes for features from text data](naive_bayes.md)
     
     - [Regression and classification performance metrics](supervised_metrics.md)
 
