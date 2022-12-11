@@ -6,7 +6,9 @@
 import numpy as np
 ```
 
-- Casting list to a np array: ```np.array([1,2,3])```
+- Casting list to a np array:
+
+```np.array([1,2,3])```
 
 #### arange
 
@@ -18,7 +20,7 @@ np.arange(start=0,stop=10,step=2)
 
 returns: ```array([0,2,4,6,8])```
 
-#### zeros and Ones:
+#### zeros and ones:
 
 * zeros
 
@@ -86,14 +88,50 @@ array([[1., 0., 0.],
 	[0., 0., 1.]])
 ```
 
+#### Percentiles
+
+```python
+q75, q25 = np.percentile(sample,[75,25])
+```
+
+### random
+
 #### Seed
 
 ```python
 np.random.seed(101)
 ```
 
-#### Percentiles
+#### Uniform sampling:
+
+The line below returns three random numbers in the range ```[0,1)``` sampled uniformly:
 
 ```python
-q75, q25 = np.percentile(sample,[75,25])
+np.random.rand(3)
+```
+
+- The following gives a shape of 3 rows by 4 columns:
+
+```python
+np.random.rand(3,4)
+```
+
+#### Normal sampling:
+
+* standard normal distribution (mean=0, variance=1):
+
+```python
+np.random.randn(3)
+```
+
+* more general normal distribution:
+
+```python
+np.random.normal(mean,std_dev,shape)
+```
+
+#### Random integers:
+
+```python
+np.random.randint(start,stop,shape)
 ```
