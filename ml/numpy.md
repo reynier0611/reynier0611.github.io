@@ -10,6 +10,8 @@ import numpy as np
 
 #### arange
 
+Returns integers given a start, stop (not included), and stepsize (default is 1):
+
 ```python
 np.arange(start=0,stop=10,step=2)
 ```
@@ -30,7 +32,39 @@ array([[0.,0.,0.,0.],
  	   [0.,0.,0.,0.]])
 ```
 
+```python
+np.ones((3))
+```
+
+returns:
+
+```
+array([1.,1.,1.])
+```
+
+```python
+np.ones((4))*5
+```
+
+returns:
+
+```
+array([5.,5.,5.,5.])
+```
+
+#### Linspace:
+
+Evenly spaced numbers over a specified interval. Includes stop value.
+
+```python
+np.linspace(0,10,3)
+```
+
 returns
+
+```
+array([0., 5., 10.])
+```
 
 #### Seed
 
