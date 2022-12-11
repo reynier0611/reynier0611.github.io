@@ -12,7 +12,11 @@ model = DBSCAN(eps=0.15)
 sns.scatterplot(data=data,x='X1',y='X2',hue=labels,palette='Set1')
 ```
 
+The eps hyperparameter corresponds to the max distance between two samples for one to be considered as in the neighborhood of the other. This is the most important DBSCAN parameter to choose appropriately for your data set and distance function.
+
 <img src="img/dbscan.jpg" width="500" height="200" style="float: center;" />
+
+- Embow method to select the eps hyperparameter:
 
 ```python
 outlier_percent = []
@@ -28,4 +32,4 @@ for eps in np.linspace(0.001,10,100):
 sns.lineplot(x=np.linspace(0.001,10,100),y=number_of_outliers)
 ```
 
-<img src="img/dbscan_elbow.jpg" width="500" height="100" style="float: center;" />
+<img src="img/dbscan_elbow.jpg" width="500" height="300" style="float: center;" />
