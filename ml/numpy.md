@@ -66,6 +66,20 @@ returns
 array([0., 5., 10.])
 ```
 
+#### Identity matrix:
+
+```python
+np.eye(3)
+```
+
+returns
+
+```
+array([[1., 0., 0.],
+	[0., 1., 0.],
+	[0., 0., 1.]])
+```
+
 #### Seed
 
 ```python
