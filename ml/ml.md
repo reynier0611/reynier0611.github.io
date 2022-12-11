@@ -32,7 +32,7 @@
 
     - Hierarchical clustering
 
-    - DBSCAN
+    - [DBSCAN](dbscan.md)
 
     - [Principal Component Analysis (PCA)](pca.md)
 
