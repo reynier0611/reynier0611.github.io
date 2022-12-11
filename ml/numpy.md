@@ -181,3 +181,10 @@ arr*arr
 this returns: ```array([4,9,16])```.
 
 * [Universal array functions](https://numpy.org/doc/stable/reference/ufuncs.html)
+
+### Covariance matrix, eigenvalues and eigenvectors:
+
+```python
+covariance_matrix = np.cov(scaled_X,rowvar=False)
+eigen_values, eigen_vectors = np.linalg.eig(covariance_matrix)
+```
