@@ -94,7 +94,16 @@ array([[1., 0., 0.],
 q75, q25 = np.percentile(sample,[75,25])
 ```
 
-### random
+#### Reshaping
+
+```python
+arr = np.arange(24)
+arr.shape # --> (25,)
+arr = arr.reshape(5,5)
+arr.shape # --> (5,5)
+```
+
+### Random sampling
 
 #### Seed
 
