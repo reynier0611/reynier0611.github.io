@@ -8,7 +8,9 @@ import numpy as np
 
 - Casting list to a np array:
 
-```np.array([1,2,3])```
+```python
+np.array([1,2,3])
+```
 
 #### arange
 
@@ -159,3 +161,23 @@ np.random.normal(mean,std_dev,shape)
 ```python
 np.random.randint(start,stop,shape)
 ```
+
+### Numpy operations
+
+```python
+arr = np.array(0,1,2)
+arr + 5
+```
+
+this returns ```array([5,6,7])``` as the operation is done on an element-by-element basis.
+
+- Similar with array-array operations:
+
+```python
+arr = np.array(2,3,4)
+arr*arr
+```
+
+this returns: ```array([4,9,16])```.
+
+* [Universal array functions](https://numpy.org/doc/stable/reference/ufuncs.html)
