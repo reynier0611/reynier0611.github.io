@@ -36,7 +36,7 @@
 
 ## [Machine Learning](ml/ml.md) <img src="img/ml_logo.jpg" width="40" height="40" style="float: right;" />
 
-## [SQL](sql.md) <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
+## [Structured Query Language (SQL)](sql.md) <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
 
 ## Useful Links
 
