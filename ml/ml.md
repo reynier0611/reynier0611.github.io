@@ -30,7 +30,7 @@
 
     - [K means clustering](kmeans.md)
 
-    - Hierarchical clustering
+    - [Hierarchical clustering](hierarchical_c.md)
 
     - [DBSCAN](dbscan.md)
 
