@@ -128,4 +128,67 @@ This is an example of mode collapse: these images look very similar. This can be
 
 #### Deep Convolutional GAN:
 
+Most of this code is identical to the one above. The parts that are different will be highlighted below.
 
+1. The data:
+- Something that we did not do above that we should do here is scale the data. The generator will use tanh activation function for the last layer, so we want to reshape X_train to be within -1 to 1 limits:
+
+```python
+X_train = X_train/255
+X_train = X_train.reshape(-1,28,28,1)*2.-1.
+
+only_zeros = X_train[y_train==0]
+```
+
+2. The model:
+
+```python
+import tensorflow as tf
+from tensorflow.keras.layers import Dense, Reshape, Flatten, Dropout, LeakyReLU, BatchNormalization, Conv2D, Conv2DTranspose
+from tensorflow.keras.models import Sequential
+```
+
+- Discriminator:
+
+```python
+discriminator = Sequential()
+discriminator.add(Conv2D(64, kernel_size=5, strides=2, padding='same',
+                        activation=LeakyReLU(0.3),
+                        input_shape=[28,28,1]))
+discriminator.add(Dropout(0.5))
+discriminator.add(Conv2D(128, kernel_size=5, strides=2, padding='same',
+                        activation=LeakyReLU(0.3),
+                        input_shape=[28,28,1]))
+discriminator.add(Dropout(0.5))
+discriminator.add(Flatten())
+discriminator.add(Dense(1,activation='sigmoid'))
+```
+
+- Generator:
+
+```python
+codings_size = 100
+
+generator = Sequential()
+generator.add(Dense(7 * 7 * 128, input_shape=[codings_size]))
+generator.add(Reshape([7, 7, 128]))
+generator.add(BatchNormalization())
+generator.add(Conv2DTranspose(64, kernel_size=5, strides=2, padding="same",
+                                 activation="relu"))
+generator.add(BatchNormalization())
+generator.add(Conv2DTranspose(1, kernel_size=5, strides=2, padding="same",
+                                 activation="tanh"))
+```
+
+- GAN:
+
+```python
+GAN = Sequential([generator,discriminator])
+discriminator.compile(loss='binary_crossentropy',optimizer='adam')
+discriminator.trainable = False
+GAN.compile(loss='binary_crossentropy',optimizer='adam')
+```
+
+The rest of the code is the same. Now, upon using the generator to create new images, we see a larger variation in the produced zeros:
+
+<img src="img/gan2.jpg" width="400" height="100" style="float: center;" />
