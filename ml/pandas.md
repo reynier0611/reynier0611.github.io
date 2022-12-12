@@ -35,6 +35,37 @@ df_objects_dummies = pd.get_dummies(my_object_df,drop_first=True)
 df = df.sample(frac=0.1,random_state=101)
 ```
 
+### Apply and lambda expression:
+
+```python
+def multiply(x,y): return x*y
+df['A_x_B'] = df.apply(lambda x: multiply(x['A'],x['B']),axis=1)
+```
+
+### DataFrame indices
+
+```python
+df = df.set_index('col_name')
+df = df.reset_index()
+```
+
+### Useful commands:
+
+```python
+df.head()
+df.tail()
+df.info()
+df.describe.transpose()
+```
+
+### Handling missing data:
+
+```python
+df.dropna()
+df.dropna(axis=1)
+df.fillna()
+```
+
 ### Useful links:
 
 - [Pandas Documentation](https://pandas.pydata.org/docs/user_guide/index.html)
