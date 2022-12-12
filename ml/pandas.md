@@ -64,6 +64,9 @@ df.describe.transpose()
 df.dropna()
 df.dropna(axis=1)
 df.fillna()
+df['A'] = df['A'].fillna(value=0.0)
+df['B'] = df['B'].fillna(value=df['B'].mean())
+df = df.fillna(value=df.mean())
 ```
 
 ### Useful links:
