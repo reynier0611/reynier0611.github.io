@@ -14,3 +14,12 @@ plt.title('Title')
 plt.xlabel('x axis')
 plt.ylabel('y axis')
 ```
+
+### Interactive 3D image
+
+```python
+%matplotlib notebook
+fig = plt.figure()
+ax = fig.add_subplot(111,projection='3d')
+ax.scatter(feat['X1'],feat['X2'],feat['X3'],c=y)
+```
