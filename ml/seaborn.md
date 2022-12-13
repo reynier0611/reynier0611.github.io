@@ -26,14 +26,18 @@ sns.countplot(data=df,x='A')
 sns.barplot(data=df,x='A',y='B',estimator=np.mean,ci='sd')
 ```
 
-<img src="img/sns_count.jpg" width="700" height="180" style="float: center;" />
+<img src="img/sns_count.jpg" width="500" height="180" style="float: center;" />
 
 ```python
 sns.boxplot(data=df,y='numerical data',x='categories')
 sns.violinplot(data=df,y='numerical data',x='categories')
 sns.swarmplot(data=df,x='numerical data',y='categories')
 sns.boxenplot(data=df,x='numerical data',y='categories')
+```
 
+<img src="img/sns_box.jpg" width="500" height="300" style="float: center;" />
+
+```python
 sns.jointplot(data=df,x='A',y='B',kind='scatter') # or kind hex, hist, kde
 
 sns.pairplot(data=df)
