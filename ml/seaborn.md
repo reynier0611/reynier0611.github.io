@@ -79,4 +79,4 @@ sns.heatmap(data=df,linewidth=0.5,annot=True, cmap='viridis')
 sns.clustermap(data=df,linewidth=0.5,annot=True, cmap='viridis')
 ```
 
-<img src="img/sns_matrix.jpg" width="630" height="400" style="float: center;" />
+<img src="img/sns_matrix.jpg" width="630" height="350" style="float: center;" />
