@@ -7,10 +7,10 @@ import seaborn as sns
 ```
 
 ```python
-scat = sns.scatterplot(x='salary',y='sales',data=df,hue='level of education')
+scat = sns.scatterplot(x='A',y='B',data=df,hue='C')
 ```
 
-<img src="img/sns_scatterplot.jpg" width="200" height="100" style="float: right;" />
+<img src="img/sns_scatterplot.jpg" width="300" height="200" style="float: center;" />
 
 ```python
 sns.rugplot(x='A',data=df)
