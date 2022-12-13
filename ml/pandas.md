@@ -69,8 +69,61 @@ df['B'] = df['B'].fillna(value=df['B'].mean())
 df = df.fillna(value=df.mean())
 ```
 
+### groupby:
+
+```python
+df.groupby('Year').sum(numeric_only=True).sort_index(ascending=False)
+```
+
+- Multi-index groupby:
+
+```python
+df.groupby(['Year','Sector']).sum(numeric_only=True)
+```
+
+- Grouped summary statistics
+
+```python
+df.groupby('Year').describe()
+```
+
+* [13 functions to aggregate](https://cmdlinetips.com/2019/10/pandas-groupby-13-functions-to-aggregate/)
+
+### Other operations:
+
+```python
+df['Year'].unique()
+df['Year'].nunique()
+df['Year'].value_counts()
+```
+
+- Max value and index of this max value (similar with min):
+
+```python
+df['col1'].max()
+df['col1'].idxmax()
+```
+
+- Sort values:
+
+```python
+df.sort_values('col1',ascending=False)
+```
+
+### Joining dataframes:
+
+```python
+df_new = pd.concatenate([df1,df2],axis=1)
+```
+
+```python
+df_new = pd.merge(left=df1,right=df2,on='col1',how='inner')
+```
+
 ### Useful links:
 
 - [Pandas Documentation](https://pandas.pydata.org/docs/user_guide/index.html)
+
+- [Input / Output](https://pandas.pydata.org/docs/user_guide/io.html)
 
 - [replace](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.replace.html)
