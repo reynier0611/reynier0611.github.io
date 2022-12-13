@@ -12,6 +12,8 @@ scat = sns.scatterplot(x='A',y='B',data=df,hue='C')
 
 <img src="img/sns_scatterplot.jpg" width="300" height="200" style="float: center;" />
 
+### Distribution plots
+
 ```python
 sns.rugplot(x='A',data=df)
 sns.displot(data=df,x='A',bins=20)
@@ -20,6 +22,8 @@ sns.kdeplot(data=df,x='A')
 ```
 
 <img src="img/sns_hists.jpg" width="650" height="160" style="float: center;" />
+
+### Categorical plots
 
 ```python
 sns.countplot(data=df,x='A')
@@ -51,15 +55,26 @@ sns.pairplot(data=df)
 
 <img src="img/sns_pairplot.jpg" width="500" height="500" style="float: center;" />
 
+### Grid plots
+
 ```python
 sns.catplot(data=df,x='numerical var',y='cat 1',kind='box',row='cat 2',col='cat 3')
+```
 
+<img src="img/sns_catplot.jpg" width="500" height="500" style="float: center;" />
 
+```python
 g = sns.PairGrid(df)
 g = g.map_upper(sns.scatterplot)
 g = g.map_lower(sns.kdeplot)
 g = g.map_diag(sns.histplot)
+```
 
+<img src="img/sns_pairgrid.jpg" width="500" height="500" style="float: center;" />
+
+### Matrix plots
+
+```python
 sns.heatmap(data=df,linewidth=0.5,annot=True, cmap='viridis')
 
 sns.clustermap(data=df,linewidth=0.5,annot=True, cmap='viridis')
