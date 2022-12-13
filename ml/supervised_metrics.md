@@ -59,4 +59,4 @@ accuracy_score(y_test,y_pred)
 from sklearn.metrics import precision_score, recall_score
 ```
 
-- $F1 score = \frac{2 \times {\rm precision} \times {\rm recall}}{{\rm precision} + {\rm recall}}$
+- F1 score = 2 * precision * recall / (precision + recall)
