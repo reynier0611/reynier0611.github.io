@@ -19,14 +19,14 @@ sns.histplot(data=df,x='A',bins=20,kde=True)
 sns.kdeplot(data=df,x='A')
 ```
 
-<img src="img/sns_hists.jpg" width="900" height="180" style="float: center;" />
+<img src="img/sns_hists.jpg" width="800" height="180" style="float: center;" />
 
 ```python
 sns.countplot(data=df,x='A')
 sns.barplot(data=df,x='A',y='B',estimator=np.mean,ci='sd')
 ```
 
-<img src="img/sns_count.jpg" width="900" height="180" style="float: center;" />
+<img src="img/sns_count.jpg" width="700" height="180" style="float: center;" />
 
 ```python
 sns.boxplot(data=df,y='numerical data',x='categories')
