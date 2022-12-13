@@ -17,7 +17,11 @@ sns.rugplot(x='A',data=df)
 sns.displot(data=df,x='A',bins=20)
 sns.histplot(data=df,x='A',bins=20,kde=True)
 sns.kdeplot(data=df,x='A')
+```
 
+<img src="img/sns_hists.jpg" width="1000" height="200" style="float: center;" />
+
+```python
 sns.countplot(data=df,x='A')
 sns.barplot(data=df,x='A',y='B',estimator=np.mean,ci='sd')
 
