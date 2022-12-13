@@ -4,9 +4,15 @@
 
 ```python
 import seaborn as sns
+```
 
-sns.scatterplot(x='A',y='B',data=df)
+```python
+scat = sns.scatterplot(x='salary',y='sales',data=df,hue='level of education')
+```
 
+<img src="img/sns_scatterplot.jpg" width="200" height="100" style="float: right;" />
+
+```python
 sns.rugplot(x='A',data=df)
 sns.displot(data=df,x='A',bins=20)
 sns.histplot(data=df,x='A',bins=20,kde=True)
