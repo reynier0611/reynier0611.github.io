@@ -76,6 +76,7 @@ g = g.map_diag(sns.histplot)
 
 ```python
 sns.heatmap(data=df,linewidth=0.5,annot=True, cmap='viridis')
-
 sns.clustermap(data=df,linewidth=0.5,annot=True, cmap='viridis')
 ```
+
+<img src="img/sns_matrix.jpg" width="650" height="400" style="float: center;" />
