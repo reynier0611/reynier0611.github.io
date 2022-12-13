@@ -19,7 +19,7 @@ sns.histplot(data=df,x='A',bins=20,kde=True)
 sns.kdeplot(data=df,x='A')
 ```
 
-<img src="img/sns_hists.jpg" width="600" height="180" style="float: center;" />
+<img src="img/sns_hists.jpg" width="650" height="160" style="float: center;" />
 
 ```python
 sns.countplot(data=df,x='A')
@@ -37,6 +37,8 @@ sns.boxenplot(data=df,x='numerical data',y='categories')
 
 <img src="img/sns_box.jpg" width="500" height="300" style="float: center;" />
 
+### Comparison plots
+
 ```python
 sns.jointplot(data=df,x='A',y='B',kind='scatter') # or kind hex, hist, kde
 ```
@@ -45,7 +47,11 @@ sns.jointplot(data=df,x='A',y='B',kind='scatter') # or kind hex, hist, kde
 
 ```python
 sns.pairplot(data=df)
+```
 
+<img src="img/sns_pairplot.jpg" width="500" height="500" style="float: center;" />
+
+```python
 sns.catplot(data=df,x='numerical var',y='cat 1',kind='box',row='cat 2',col='cat 3')
 
 
