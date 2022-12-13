@@ -21,7 +21,7 @@ sns.histplot(data=df,x='A',bins=20,kde=True)
 sns.kdeplot(data=df,x='A')
 ```
 
-<img src="img/sns_hists.jpg" width="650" height="160" style="float: center;" />
+<img src="img/sns_hists.jpg" width="630" height="160" style="float: center;" />
 
 ### Categorical plots
 
@@ -79,4 +79,4 @@ sns.heatmap(data=df,linewidth=0.5,annot=True, cmap='viridis')
 sns.clustermap(data=df,linewidth=0.5,annot=True, cmap='viridis')
 ```
 
-<img src="img/sns_matrix.jpg" width="650" height="400" style="float: center;" />
+<img src="img/sns_matrix.jpg" width="630" height="400" style="float: center;" />
