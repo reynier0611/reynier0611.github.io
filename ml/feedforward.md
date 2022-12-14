@@ -31,11 +31,15 @@ model.fit(x=X_train,y=y_train,epochs=30,verbose=0,batch_size=256,
 	      validation_data=(X_test,y_test))
 ```
 
-##### Saving the model
+##### Saving / loading the model
+
+```python
+model.save('my_03_model.h5')
+```
 
 ```python
 from tensorflow.keras.models import load_model
-model.save('my_03_model.h5')
+model.load_model('my_03_model.h5')
 ```
 
 ##### Predictions
