@@ -104,6 +104,8 @@ model.compile(optimizer='rmsprop',
 
 ## Other useful links
 
+- [Dealing with imbalanced datasets](imbalanced.md)
+
 - [Selecting number of layers and nodes in feed-forward NN](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).
 
 - [Selecting hyperparameters for convolutional NN](https://stats.stackexchange.com/questions/148139/rules-for-selecting-convolutional-neural-network-hyperparameters)
