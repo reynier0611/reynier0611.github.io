@@ -94,7 +94,9 @@ time bash benchmarks/tracking/RCT_pions.sh
 npsim --runType batch --numberOfEvents 100000 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile out_0um_new.edm4hep.root --random.seed 42
 ```
 
-### Changing beampipe thickness
+------
+
+## Changing beampipe thickness
 
 ##### First time
 
