@@ -147,7 +147,21 @@ export EIC_SHELL_PREFIX=/project/projectdirs/alice/reynier/eic/repos/install
 export LD_LIBRARY_PATH=$EIC_SHELL_PREFIX/lib:$LD_LIBRARY_PATH
 source $EIC_SHELL_PREFIX/setup.sh
 cd /project/projectdirs/alice/reynier/eic/repos/epic/build/
+```
+If you change the beampipe thickness, do:
+
+```bash
 cmake .. -DCMAKE_INSTALL_PREFIX=$EIC_SHELL_PREFIX; make; make install; source setup.sh
+```
+otherwise just do:
+
+```bash
+source setup.sh
+```
+
+- Finally check that it worked:
+
+```bash
 cd /global/project/projectdirs/m3763/reynier/DD4HEP/
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 ```
