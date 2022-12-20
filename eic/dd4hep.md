@@ -6,9 +6,9 @@
 
 See more details [here](https://github.com/bschmookler/athena_ana) and [here](https://demo.hedgedoc.org/s/Dm9DG1oi7).
 
-### Getting DD4HEP working on Cori
+## Getting DD4HEP working on Cori
 
-##### First time:
+#### First time:
 
 ssh into Cori, go to a convenient directory, and run:
 ```bash
@@ -22,7 +22,7 @@ cd DD4HEP
 git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
 ```
 
-##### Subsequent times:
+#### Subsequent times:
 
 ```bash
 shifter --image=eicweb/jug_xl:nightly /bin/bash
@@ -66,7 +66,7 @@ ReconstructedParticles.p.y = 1.124782
 ReconstructedParticles.p.z = -0.241075
 ```
 
-### Running a batch job
+## Running a batch job
 
 ```bash
 cd /global/project/projectdirs/m3763/reynier/DD4HEP/reconstruction_benchmarks/slurm_scripts
@@ -80,25 +80,15 @@ This script collects all the necessary slurm information and runs ```2_run_test_
 * reconstructs events: ```benchmarks/tracking/scripts/rec_central_pions.cxx+```
 
 
-### Tests
+## Passing background hepmc file to DD4HEP GEANT simulation
 
 ```bash
-time bash benchmarks/tracking/RCT_pions.sh
+npsim --runType batch --numberOfEvents -1 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile out_0um_new.edm4hep.root --random.seed 42
 ```
-
-100 pions takes approximately 1 min 40 sec
-
-### Passing background hepmc file to DD4HEP GEANT simulation
-
-```bash
-npsim --runType batch --numberOfEvents 100000 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile out_0um_new.edm4hep.root --random.seed 42
-```
-
-------
 
 ## Changing beampipe thickness
 
-##### First time
+#### First time
 
 ```bash
 cd /project/projectdirs/alice/reynier/eic/
@@ -123,26 +113,27 @@ cd epic
 vim compact/central_beampipe.xml
 ```
 
-For example, set:
+- For example, set:
 
 ```bash
 gold_thickness="1e-10*um"
 ```
-Then compile this change:
+
+- Then compile this change:
 
 ```bash
 mkdir build; cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=$EIC_SHELL_PREFIX; make; make install; source setup.sh
 ```
 
-Test these changes with a material scan:
+- Test these changes with a material scan:
 
 ```bash
 cd /global/project/projectdirs/m3763/reynier/DD4HEP/
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 ```
 
-##### Subsequent times
+#### Subsequent times
 
 ```bash
 export EIC_SHELL_PREFIX=/project/projectdirs/alice/reynier/eic/repos/install
@@ -150,12 +141,14 @@ export LD_LIBRARY_PATH=$EIC_SHELL_PREFIX/lib:$LD_LIBRARY_PATH
 source $EIC_SHELL_PREFIX/setup.sh
 cd /project/projectdirs/alice/reynier/eic/repos/epic/build/
 ```
-If you change the beampipe thickness, do:
+
+- If you change the beampipe thickness, do:
 
 ```bash
 cmake .. -DCMAKE_INSTALL_PREFIX=$EIC_SHELL_PREFIX; make; make install; source setup.sh
 ```
-otherwise just do:
+
+- otherwise just do:
 
 ```bash
 source setup.sh
@@ -168,7 +161,7 @@ cd /global/project/projectdirs/m3763/reynier/DD4HEP/
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
 ```
 
-##### Old method (deprecated)
+#### Old method (deprecated)
 
 ```bash
 cd /project/projectdirs/alice/reynier/eic
@@ -217,7 +210,7 @@ eicrecon dis_for_background_test.edm4hep.root -Ppodio:background_filename=genera
 ```
 
 
-### Modify and compile juggler
+## Modify and compile juggler
 
 Yue Shi sent us two codes for the updated realistic seeding: ```TrackParamACTSSeeding.cpp``` and ```track_reconstruction.py```. We need to do
 
