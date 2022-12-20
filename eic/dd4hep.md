@@ -66,30 +66,6 @@ ReconstructedParticles.p.y = 1.124782
 ReconstructedParticles.p.z = -0.241075
 ```
 
-### Modify and compile juggler
-
-Yue Shi sent us two codes for the updated realistic seeding: ```TrackParamACTSSeeding.cpp``` and ```track_reconstruction.py```. We need to do
-
-1. Get a copy of Juggler:
-```cd /project/projectdirs/alice/reynier/eic```
-2. Update ```TrackParamACTSSeeding.cpp``` with the file from Yue Shi:
-```cp ~/TrackParamACTSSeeding.cpp juggler/JugTrack/src/components/```
-3. Compile this new juggler version:
-```bash
-mkdir local
-ATHENA_PREFIX=/project/projectdirs/alice/reynier/eic/
-mkdir build; cd build
-cmake ../juggler/ -DCMAKE_INSTALL_PREFIX=$ATHENA_PREFIX
-make
-make install
-export JUGGLER_INSTALL_PREFIX=$ATHENA_PREFIX
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${ATHENA_PREFIX}/lib
-```
-4. Also copy ```track_reconstruction.py``` from Yue Shi:
-```
-mv ../track_reconstruction.py reconstruction_benchmarks/benchmarks/tracking/options/track_reconstruction.py
-```
-
 ### Running a batch job
 
 ```bash
@@ -119,6 +95,64 @@ npsim --runType batch --numberOfEvents 100000 --compactFile ${DETECTOR_PATH}/epi
 ```
 
 ### Changing beampipe thickness
+
+##### First time
+
+```bash
+cd /project/projectdirs/alice/reynier/eic/
+mkdir repos
+cd /project/projectdirs/alice/reynier/eic/repos/
+```
+
+- From the same directory, make an install directory and link properly:
+
+```bash
+mkdir install
+export EIC_SHELL_PREFIX=/project/projectdirs/alice/reynier/eic/repos/install
+export LD_LIBRARY_PATH=$EIC_SHELL_PREFIX/lib:$LD_LIBRARY_PATH
+source $EIC_SHELL_PREFIX/setup.sh
+```
+
+- From the same directory clone the epic repo and edit beampipe gold coating thickness:
+
+```bash
+git clone https://github.com/eic/epic
+cd epic
+vim compact/central_beampipe.xml
+```
+
+For example, set:
+
+```bash
+gold_thickness="1e-10*um"
+```
+Then compile this change:
+
+```bash
+mkdir build; cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$EIC_SHELL_PREFIX; make; make install; source setup.sh
+```
+
+Test these changes with a material scan:
+
+```bash
+cd /global/project/projectdirs/m3763/reynier/DD4HEP/
+materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
+```
+
+##### Subsequent times
+
+```bash
+export EIC_SHELL_PREFIX=/project/projectdirs/alice/reynier/eic/repos/install
+export LD_LIBRARY_PATH=$EIC_SHELL_PREFIX/lib:$LD_LIBRARY_PATH
+source $EIC_SHELL_PREFIX/setup.sh
+cd /project/projectdirs/alice/reynier/eic/repos/epic/build/
+cmake .. -DCMAKE_INSTALL_PREFIX=$EIC_SHELL_PREFIX; make; make install; source setup.sh
+cd /global/project/projectdirs/m3763/reynier/DD4HEP/
+materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
+```
+
+##### Old method (deprecated)
 
 ```bash
 cd /project/projectdirs/alice/reynier/eic
@@ -164,6 +198,31 @@ npsim --runType batch --numberOfEvents 10000 --compactFile ${DETECTOR_PATH}/epic
 
 ```bash
 eicrecon dis_for_background_test.edm4hep.root -Ppodio:background_filename=generated_SR_background/geant_out_int_window_100.0ns_nevents_100000_pid_22_Escale_x1.0_status_4_1_seed_1.edm4hep.root -Ppodio:num_background_events=1
+```
+
+
+### Modify and compile juggler
+
+Yue Shi sent us two codes for the updated realistic seeding: ```TrackParamACTSSeeding.cpp``` and ```track_reconstruction.py```. We need to do
+
+1. Get a copy of Juggler:
+```cd /project/projectdirs/alice/reynier/eic```
+2. Update ```TrackParamACTSSeeding.cpp``` with the file from Yue Shi:
+```cp ~/TrackParamACTSSeeding.cpp juggler/JugTrack/src/components/```
+3. Compile this new juggler version:
+```bash
+mkdir local
+ATHENA_PREFIX=/project/projectdirs/alice/reynier/eic/
+mkdir build; cd build
+cmake ../juggler/ -DCMAKE_INSTALL_PREFIX=$ATHENA_PREFIX
+make
+make install
+export JUGGLER_INSTALL_PREFIX=$ATHENA_PREFIX
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${ATHENA_PREFIX}/lib
+```
+4. Also copy ```track_reconstruction.py``` from Yue Shi:
+```
+mv ../track_reconstruction.py reconstruction_benchmarks/benchmarks/tracking/options/track_reconstruction.py
 ```
 
 ## DD4HEP tutorials
