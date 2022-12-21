@@ -120,6 +120,15 @@ df_new = pd.concatenate([df1,df2],axis=1)
 df_new = pd.merge(left=df1,right=df2,on='col1',how='inner')
 ```
 
+### drop rows with all zeros
+
+```python
+df.loc[~(df==0).all(axis=1)]
+df.loc[(df!=0).any(axis=1)]
+```
+
+see discussion [here](https://stackoverflow.com/questions/22649693/drop-rows-with-all-zeros-in-pandas-data-frame).
+
 ### Useful links:
 
 - [Pandas Documentation](https://pandas.pydata.org/docs/user_guide/index.html)
