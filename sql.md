@@ -35,7 +35,7 @@ returns number of rows in the table. All the calls above return the same value.
 SELECT COUNT(DISTINCT column_1) FROM table;
 ```
 
-### SELECT WHERE
+### Conditional selection
 
 ```sql
 SELECT column_1, column_2 FROM table WHERE condition;
@@ -50,16 +50,29 @@ SELECT name, choice FROM table WHERE name = 'David';
 SELECT name, choice FROM table WHERE name = 'David' AND rate > 4;
 ```
 
-### ORDER BY
+### Ordering
 
 ```sql
-SELECT col1, col2 FROM table ORDERBY col1 ASC/DESC
+SELECT col1, col2 FROM table ORDER BY col1 ASC
+SELECT col1, col2 FROM table ORDER BY col1 ASC, col2 DESC
 ```
 
 - Ascending is the default. Order by comes at the end of the query, including after WHERE statements.
 
+### Limiting number of rows return in a query
 
+- LIMIT is the last command to be executed
 
+```sql
+SELECT * FROM table ORDER BY payment_date DESC LIMIT 5;
+```
 
+### BETWEEN
+
+- value BETWEEN low AND HIGH
+- the same as value >= low AND value <= high
+
+- can combine with NOT operator: value NOT BETWEEN low AND high
+- the same as value < low OR value > high
 
 
