@@ -67,6 +67,12 @@ SELECT col1, col2 FROM table ORDER BY col1 ASC, col2 DESC
 SELECT * FROM table ORDER BY payment_date DESC LIMIT 5;
 ```
 
+- The command below is similar to ```.head()``` in a pandas dataframe:
+
+```sql
+SELECT * FROM table LIMIT 5;
+```
+
 ### BETWEEN
 
 - value BETWEEN low AND HIGH
@@ -74,5 +80,14 @@ SELECT * FROM table ORDER BY payment_date DESC LIMIT 5;
 
 - can combine with NOT operator: value NOT BETWEEN low AND high
 - the same as value < low OR value > high
+
+- Can be used with dates (formatted as ```'2022-12-31'``` or ```'2022-12-31 23:39:11'```)
+
+```sql
+SELECT * FROM payment WHERE amount BETWEEN 8 AND 9;
+SELECT * FROM payment WHERE amount NOT BETWEEN 8 AND 9;
+```
+
+
 
 
