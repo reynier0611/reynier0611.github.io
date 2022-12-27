@@ -50,7 +50,7 @@ SELECT name, choice FROM table WHERE name = 'David';
 SELECT name, choice FROM table WHERE name = 'David' AND rate > 4;
 ```
 
-### Ordering
+### Ordering (ORDER BY)
 
 ```sql
 SELECT col1, col2 FROM table ORDER BY col1 ASC
@@ -108,3 +108,6 @@ SELECT * FROM table WHERE first_name LIKE 'J%' AND last_name NOT LIKE 'S%'
 ```
 
 - THE ILIKE operator is just like the LIKE operator, but LIKE is case sensitive and ILIKE is case insensitive.
+
+### GROUP BY
+
