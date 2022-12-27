@@ -88,6 +88,23 @@ SELECT * FROM payment WHERE amount BETWEEN 8 AND 9;
 SELECT * FROM payment WHERE amount NOT BETWEEN 8 AND 9;
 ```
 
+### IN
 
+Check if a value is included in a list of options.
 
+```sql
+SELECT color FROM table WHERE color IN ('red','blue')
+SELECT color FROM table WHERE color NOT IN ('red','blue')
+```
 
+### LIKE and ILIKE
+
+- The LIKE operator allows us to perform pattern matching against string data with the use of wildcard characters:
+	- ```%```: matches any sequence of characters
+	- ```_``` matches any single character
+
+```sql
+SELECT * FROM table WHERE first_name LIKE 'J%' AND last_name NOT LIKE 'S%'
+```
+
+- THE ILIKE operator is just like the LIKE operator, but LIKE is case sensitive and ILIKE is case insensitive.
