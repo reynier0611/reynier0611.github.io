@@ -34,6 +34,10 @@
 
 - **[DD4HEP on Cori](eic/dd4hep.md)**<br>
 
+## Python <img src="img/python_logo.jpg" width="40" height="40" style="float: right;" />
+
+- **[Notes and links on Python](python.md)**<br>
+
 ## Machine Learning <img src="img/ml_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[ML Notes and Shortcuts](ml/ml.md)**<br>

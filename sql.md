@@ -107,7 +107,7 @@ SELECT color FROM table WHERE color NOT IN ('red','blue')
 SELECT * FROM table WHERE first_name LIKE 'J%' AND last_name NOT LIKE 'S%'
 ```
 
-- THE ILIKE operator is just like the LIKE operator, but LIKE is case sensitive and ILIKE is case insensitive.
+- The ILIKE operator is just like the LIKE operator, but LIKE is case sensitive and ILIKE is case insensitive.
 
 ### GROUP BY
 
