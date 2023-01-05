@@ -93,8 +93,8 @@ SELECT * FROM payment WHERE amount NOT BETWEEN 8 AND 9;
 Check if a value is included in a list of options.
 
 ```sql
-SELECT color FROM table WHERE color IN ('red','blue')
-SELECT color FROM table WHERE color NOT IN ('red','blue')
+SELECT color FROM table WHERE color IN ('red','blue');
+SELECT color FROM table WHERE color NOT IN ('red','blue');
 ```
 
 ### LIKE and ILIKE
@@ -104,10 +104,48 @@ SELECT color FROM table WHERE color NOT IN ('red','blue')
 	- ```_``` matches any single character
 
 ```sql
-SELECT * FROM table WHERE first_name LIKE 'J%' AND last_name NOT LIKE 'S%'
+SELECT * FROM table WHERE first_name LIKE 'J%' AND last_name NOT LIKE 'S%';
 ```
 
 - The ILIKE operator is just like the LIKE operator, but LIKE is case sensitive and ILIKE is case insensitive.
 
+### Aggregate functions
+
+- AVG() -> average
+- COUNT() -> number of values
+- MAX() -> maximum value
+- MIN() -> minimum value
+- SUM() -> sum of values
+
+```sql
+SELECT MIN(replacement_cost) FROM film;
+SELECT ROUND(AVG(replacement_cost),2) FROM film;
+```
+
 ### GROUP BY
 
+```sql
+SELECT category_col, AGG(data_col) FROM table WHERE category_col != 'A' GROUP BY category_col;
+```
+
+```sql
+SELECT company, SUM(sales) FROM table WHERE GROUP BY company ORDER BY SUM(sales);
+```
+
+```sql
+SELECT DATE(payment_date),SUM(payment) GROUP BY DATE(payment_date);
+```
+
+### HAVING
+
+- Filtering after GROUP BY.
+
+```sql
+SELECT company, SUM(sales) FROM table WHERE company != 'Google' GROUP BY company HAVING SUM(sales) > 1000
+```
+
+### JOINS
+
+- [Visual example of SQL JOINS](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+- [SQL JOIN Examples](https://www.talend.com)
+- [Wikipedia page on SQL JOINS](https://en.wikipedia.org/wiki/Join_(SQL))
