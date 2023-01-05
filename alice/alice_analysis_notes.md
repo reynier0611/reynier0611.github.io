@@ -36,7 +36,7 @@ MathJax.Hub.Queue(function() {
 - [E. Lesser - Measurements of the groomed and ungroomed jet angularities and mass in central Pb-Pb collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-notes.web.cern.ch/node/1306)
 - [J. Mulligan - Measurements of inclusive and leading subjet fragmentation in pp and Pb–Pb collisions at 5.02 TeV](https://alice-notes.web.cern.ch/node/1175)
 - [J. Mulligan - Measurements of the groomed jet radius and groomed momentum fraction in pp and central Pb–Pb collisions at 5.02 TeV](https://alice-notes.web.cern.ch/node/1069)
-- [E. Lesser - Measurements of groomed generalized jet angularities in pp collisions at $\sqrt{s}=5.02$ TeV with ALICE](https://alice-notes.web.cern.ch/node/1119)
+- [E. Lesser - Measurements of generalized jet angularities in pp collisions at $\sqrt{s}=5.02$ TeV with ALICE](https://alice-notes.web.cern.ch/node/1068)
 - [J. Mulligan - Inclusive full jet measurements in Pb-Pb collisions at 5.02 TeV with ALICE](https://alice-notes.web.cern.ch/node/814)
 
 
