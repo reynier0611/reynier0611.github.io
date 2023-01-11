@@ -39,7 +39,7 @@ model.save('my_03_model.h5')
 
 ```python
 from tensorflow.keras.models import load_model
-model.load_model('my_03_model.h5')
+model = load_model('my_03_model.h5')
 ```
 
 ##### Predictions
