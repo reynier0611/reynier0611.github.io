@@ -36,6 +36,8 @@
 
 - **[DD4HEP on Cori](eic/dd4hep.md)**<br>
 
+- **[Realistic Tracking](eic/realistic_tracking.md)**<br>
+
 ## Python <img src="img/python_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[Notes and links on Python](python.md)**<br>
