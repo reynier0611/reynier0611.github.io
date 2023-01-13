@@ -8,6 +8,8 @@
 
 - **[Notes on pyjetty structure](alice/pyjetty_structure.md)**<br>
 
+- **[TREX justification](misc/trex.md)**<br>
+
 ## ALICE <img src="img/alice_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[ALICE analysis notes and papers](alice/alice_analysis_notes.md)**<br>
@@ -57,8 +59,6 @@
 - **[PRL word count](misc/prl_wordcount.md)**<br>
 
 - **[screen command](misc/screen.md)**<br>
-
-- **[TREX LBNL](misc/trex.md)**<br>
 
 - **[Splitting the screen with vim](misc/vim_commands.md)**<br>
 
