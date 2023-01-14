@@ -138,14 +138,83 @@ SELECT DATE(payment_date),SUM(payment) GROUP BY DATE(payment_date);
 
 ### HAVING
 
-- Filtering after GROUP BY.
+- Filtering after ```GROUP BY```.
 
 ```sql
-SELECT company, SUM(sales) FROM table WHERE company != 'Google' GROUP BY company HAVING SUM(sales) > 1000
+SELECT company, SUM(sales) FROM table WHERE company != 'Google' GROUP BY company HAVING SUM(sales) > 1000;
 ```
+
+### AS
+
+Create an alias for a column or result
+
+```sql
+SELECT column AS new_name FROM table;
+```
+
+The ```AS``` operator gets executed at the very end of a query. We cannot use the alias inside a ```WHERE``` operator.
 
 ### JOINS
 
 - [Visual example of SQL JOINS](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 - [SQL JOIN Examples](https://www.talend.com)
 - [Wikipedia page on SQL JOINS](https://en.wikipedia.org/wiki/Join_(SQL))
+
+#### INNER JOIN
+
+<img src="img/join_inner.jpg" width="500" height="300" style="float: center;" />
+
+```sql
+SELECT * FROM TableA INNER JOIN TableB
+ON TableA.col_match = TableB.col_match
+```
+
+When only ```JOIN``` instead of ```INNER JOIN``` is specified, SQL performs an inner join.
+
+The columns we join on will be duplicated. We can specify that we only want one of the two:
+
+```sql
+SELECT col1, TableA.col2, col3 FROM TableA INNER JOIN TableB
+ON TableA.col2 = TableB.col2
+```
+
+#### FULL OUTER JOIN
+
+```sql
+SELECT * FROM TableA FULL OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+```
+
+#### FULL OUTER JOIN with WHERE
+
+```sql
+SELECT * FROM TableA FULL OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+WHERE TableA.id IS null OR TableB.id IS null
+```
+
+- Can use ```NULL``` or ```null```.
+
+#### LEFT OUTER JOIN
+
+```sql
+SELECT * FROM TableA LEFT OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+```
+
+- Can use ```LEFT OUTER JOIN``` or simply ```LEFT JOIN```.
+
+#### RIGHT OUTER JOIN
+
+```sql
+SELECT * FROM TableA RIGHT OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+```
+
+#### UNION
+
+```sql
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2
+```
