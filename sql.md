@@ -162,7 +162,7 @@ The ```AS``` operator gets executed at the very end of a query. We cannot use th
 
 #### INNER JOIN
 
-<img src="img/join_inner.jpg" width="500" height="300" style="float: center;" />
+<img src="img/join_inner.jpg" width="200" height="100" style="float: center;" />
 
 ```sql
 SELECT * FROM TableA INNER JOIN TableB
