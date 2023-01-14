@@ -180,6 +180,8 @@ ON TableA.col2 = TableB.col2
 
 #### FULL OUTER JOIN
 
+<img src="img/join_outer.jpg" width="120" height="80" style="float: center;" />
+
 ```sql
 SELECT * FROM TableA FULL OUTER JOIN TableB
 ON TableA.col_match = TableB.col_match
@@ -193,9 +195,13 @@ ON TableA.col_match = TableB.col_match
 WHERE TableA.id IS null OR TableB.id IS null
 ```
 
+<img src="img/join_outer_where.jpg" width="120" height="80" style="float: center;" />
+
 - Can use ```NULL``` or ```null```.
 
 #### LEFT OUTER JOIN
+
+<img src="img/join_left.jpg" width="120" height="80" style="float: center;" />
 
 ```sql
 SELECT * FROM TableA LEFT OUTER JOIN TableB
@@ -205,6 +211,8 @@ ON TableA.col_match = TableB.col_match
 - Can use ```LEFT OUTER JOIN``` or simply ```LEFT JOIN```.
 
 #### RIGHT OUTER JOIN
+
+<img src="img/join_right.jpg" width="120" height="80" style="float: center;" />
 
 ```sql
 SELECT * FROM TableA RIGHT OUTER JOIN TableB
