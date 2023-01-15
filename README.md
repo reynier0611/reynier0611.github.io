@@ -50,8 +50,6 @@
 
 - **[SQL Notes and Shortcuts](sql/sql.md)**<br>
 
-- **[Fixing exposed database](sql/sql_exposed.md)**<br>
-
 ## Useful Links
 
 - **[Installing software](misc/installing_software.md)**<br>

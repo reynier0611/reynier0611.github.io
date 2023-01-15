@@ -1,6 +1,6 @@
-## Fixing exposed database <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
+## Fixing exposed database
 
-<a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a> 
+<a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a> <a><button name="button" style = "color:blue;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io/sql/sql.html';">**Back to SQL**</button></a>
 
 We need to find our ```postgresql.conf``` file. In my case, I found it in ```/Library/PostgreSQL/15/data/```. Then we need to open this, for instance, with ```vim```, but we won't have the permissions to open this file. To access and edit it do:
 
