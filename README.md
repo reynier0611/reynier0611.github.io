@@ -48,9 +48,9 @@
 
 ## Structured Query Language (SQL) <img src="img/sql_logo.jpg" width="40" height="40" style="float: right;" />
 
-- **[SQL Notes and Shortcuts](sql.md)**<br>
+- **[SQL Notes and Shortcuts](sql/sql.md)**<br>
 
-- **[Fixing exposed database](sql_exposed.md)**<br>
+- **[Fixing exposed database](sql/sql_exposed.md)**<br>
 
 ## Useful Links
 
