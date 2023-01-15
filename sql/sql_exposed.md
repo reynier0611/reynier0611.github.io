@@ -8,6 +8,6 @@ We need to find our ```postgresql.conf``` file. In my case, I found it in ```/Li
 sudo -u postgres vim /Library/PostgreSQL/15/data/postgresql.conf
 ```
 
-and change ```'*'``` in ```listen_addresses = '*'``` to ```localhost```.
+and change ```'*'``` in ```listen_addresses = '*'``` to ```'localhost'```.
 
 See comments [here](https://dba.stackexchange.com/questions/220700/how-to-edit-postgresql-conf-with-pgadmin-4).
