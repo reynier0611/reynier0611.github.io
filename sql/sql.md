@@ -8,7 +8,9 @@
 
 - [JOINS and UNION](joins.md)
 
-- [Advanced topics](advanced.md)
+- [Advanced Topics](advanced.md)
+
+- [Creating Databases and Tables](creating.md)
 
 ### Other links:
 
