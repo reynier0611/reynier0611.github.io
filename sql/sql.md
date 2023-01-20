@@ -12,6 +12,8 @@
 
 - [Creating Databases and Tables](creating.md)
 
+- [Conditional Expressions and Procedures](conditional.md)
+
 ### Other links:
 
 - [Fixing exposed database](sql_exposed.md)
