@@ -165,3 +165,81 @@ FROM depts
 
 ### VIEWS
 
+```sql
+CREATE VIEW view_name AS
+NORMAL QUERY
+```
+
+then:
+
+```sql
+SELECT * FROM viewname
+```
+
+- Modifying view:
+
+```sql
+CREATE OR REPLACE VIEW customer_info AS
+SELECT first_name, last_name, address, district FROM customer
+INNER JOIN address
+ON customer.address_id = address.address_id
+```
+
+- Removing view:
+
+```sql
+DROP VIEW customer_info
+DROP VIEW IF EXISTS customer_info
+```
+
+- Change name of the view:
+
+```sql
+ALTER VIEW customer_info RENAME TO new_name
+```
+
+### Import and export (PGadmin):
+
+- Create table that exactly matches csv file:
+
+```sql
+CREATE TABLE simple(
+	a INTEGER,
+	b INTEGER,
+	c INTEGER
+)
+```
+
+- right-click on table -> ```Import/Export```, toggle switch to ```Import```, provide filepath, follow prompts, and click Ok. The data has been loaded.
+
+- Similarly for export.
+
+### Python and PostgreSQL
+
+- overview of how to use the ```psycopg2``` library with Python to interact with a database in PostgreSQl:
+
+```shell
+pip install psycopg2
+```
+
+```python
+import psycopg2 as pg2
+
+# Connect to database
+password = 'your password goes here'
+conn = pg2.connect(database='dvdrental',user='postgres',password=secret)
+
+cur = conn.cursor()
+
+cur.execute('SELECT * FROM payment')
+
+# Fetch first row of data
+cur.fetchone()
+
+# Fetch ten rows
+cur.fetchmany(10)
+
+conn.close()
+```
+
+- [Psycopg2 Tutorial](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial)
