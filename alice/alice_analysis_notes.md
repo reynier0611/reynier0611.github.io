@@ -18,7 +18,8 @@ MathJax.Hub.Queue(function() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 ## ALICE analysis notes and papers
-[Back to table of Contents](../README.md)
+
+<a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a>
 
 ## Papers
 - [RCT - Measurement of the opening angle between jet axes in pp collisions at $\sqrt{s}=5.02$ TeV](https://alice-publications.web.cern.ch/node/7656)

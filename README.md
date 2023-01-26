@@ -20,6 +20,8 @@
 
 - **[JSUB Coordination](alice/jsub.md)**<br>
 
+- **[Useful links](alice/alice_links.md)**<br>
+
 ## NERSC <img src="img/nersc_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[Installing Software](nersc/installing_root.md)**<br>
