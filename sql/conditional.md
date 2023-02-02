@@ -22,8 +22,7 @@ CASE
 	WHEN col_A = 1 THEN 'one'
 	WHEN col_A = 2 THEN 'two'
 	ELSE 'other'
-	AS new_col_name
-END
+END AS new_col_name
 FROM table
 ```
 
