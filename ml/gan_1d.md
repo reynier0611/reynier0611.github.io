@@ -102,7 +102,7 @@ def define_generator(latent_dim, n_outputs=2):
 
 Weights in the generator model are updated based on the performance of the discriminator model:
 
-- When discriminator is good at detecting fake samples: generator is updated more
+- When discriminator is good at detecting fake samples: generator is updated more.
 - When discriminator is bad at detecting fake samples: generator is updated less.
 
 (zero-sum or adversarial relationship between the two models)
