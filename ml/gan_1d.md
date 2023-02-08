@@ -52,7 +52,7 @@ The model must take a sample (in this case, a vector with two elements), and out
 
 In this simple example, the discriminator model will have one hidden layer with 25 nodes and we will use the ReLU activation function and the He weight initialization. The output layer will have one node for the binary classification using the sigmoid activation function.
 
-The model will minimize the binary cross entropy loss function, and the Adam version of stochastic gradient descent will be used because it is very effective.
+The model will minimize the binary cross entropy loss function, with the Adam version of stochastic gradient descent.
 
 ```python
 from keras.models import Sequential
