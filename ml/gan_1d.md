@@ -244,8 +244,8 @@ train(generator, discriminator, gan_model, latent_dim)
 
 ### Results at the beginning of training
 
-<img src="img/gan_1d_1.jpg" width="300" height="200" style="float: center;" />
+<img src="img/gan_1d_1.jpg" width="400" height="300" style="float: center;" />
 
 ### Results at the end of training
 
-<img src="img/gan_1d_2.jpg" width="300" height="200" style="float: center;" />
+<img src="img/gan_1d_2.jpg" width="400" height="300" style="float: center;" />
