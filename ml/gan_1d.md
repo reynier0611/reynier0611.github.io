@@ -45,8 +45,6 @@ def generate_real_samples(n=100):
 
 ### Define the (standalone) discriminator
 
-The model must take a sample (in this case, a vector with two elements), and output a classification prediction as to whether the sample is real or fake (binary classification problem).
-
 - Inputs: Sample with two real values.
 - Outputs: Binary classification, likelihood the sample is real (or fake).
 
