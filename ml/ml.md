@@ -90,7 +90,9 @@ model.compile(optimizer='rmsprop',
 
 - [Autoencoders](auto.md)
 
-- [Generative Adversarial Network (GAN)](gan.md)
+- [Generative Adversarial Network (GAN) - 1D example](gan_1d.md)
+
+- [Generative Adversarial Network (GAN) - Computer vision example](gan.md)
 
 ## Important Libraries
 
