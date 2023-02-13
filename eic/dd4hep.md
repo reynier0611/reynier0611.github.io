@@ -86,6 +86,35 @@ This script collects all the necessary slurm information and runs ```2_run_test_
 npsim --runType batch --numberOfEvents -1 --compactFile ${DETECTOR_PATH}/epic.xml --inputFiles ./out_int_window_100.0ns_nevents_100000.hepmc --outputFile out_0um_new.edm4hep.root --random.seed 42
 ```
 
+## Compiling EICrecon
+
+- If you want to contribute (push) code:
+
+```bash
+git clone git@github.com:eic/EICrecon
+```
+
+- you may need to be added to some list. Alternatively, do:
+
+```bash
+git clone https://github.com/eic/EICrecon
+```
+
+- Afterwards:
+
+```bash
+cd EICrecon
+cmake -S . -B build
+cmake --build build --target install -- -j8
+source ./bin/eicrecon-this.sh
+```
+
+- Check that DD4HEP is using this repo rather than the default one:
+
+```bash
+which eicrecon
+```
+
 ## Changing beampipe thickness
 
 #### First time
