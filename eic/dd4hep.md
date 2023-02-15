@@ -115,6 +115,51 @@ source ./bin/eicrecon-this.sh
 which eicrecon
 ```
 
+### Using Barak's plug-in
+
+##### Step 1:
+
+- Check which branch we are currently in:
+
+```bash
+git branch -a
+```
+
+We may see by default that we are using the main branch, but we want to use ```track-qa-barak```. To use that branch instead do:
+
+```bash
+git checkout track-qa-barak
+```
+
+then recompile EICrecon:
+
+```bash
+cmake -S . -B build; cmake --build build --target install -- -j8
+```
+
+##### Step 2: 
+
+Use this command to run the simulation and reconstruction: 
+
+https://github.com/eic/EICrecon/blob/track-qa-barak/src/tests/track_qa/run_sim.sh
+
+You'll need to adjust the steering file to generate the particle eta, momentum range you want.
+
+##### Step 3: 
+
+To switch between truth seeded and real seeded tracks, toggle this line in [EICrecon/blob/track-qa-barak/src/tests/track_qa/trackqa_processor.cc](https://github.com/eic/EICrecon/blob/track-qa-barak/src/tests/track_qa/trackqa_processor.cc)
+
+Truth seeding for track reconstruction:
+
+```c++
+auto trajectories = event->Get<eicrecon::TrackingResultTrajectory>("CentralCKFTrajectories");
+```
+
+Realistic seeding for track reconstruction:
+```c++
+auto trajectories = event->Get<eicrecon::TrackingResultTrajectory>("CentralCKFSeededTrajectories");
+```
+
 ## Changing beampipe thickness
 
 #### First time
