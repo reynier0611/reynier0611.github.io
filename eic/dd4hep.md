@@ -141,7 +141,7 @@ cmake -S . -B build; cmake --build build --target install -- -j8
 
 Use this command to run the simulation and reconstruction: 
 
-https://github.com/eic/EICrecon/blob/track-qa-barak/src/tests/track_qa/run_sim.sh
+[EICrecon/blob/track-qa-barak/src/tests/track_qa/run_sim.sh](https://github.com/eic/EICrecon/blob/track-qa-barak/src/tests/track_qa/run_sim.sh)
 
 You'll need to adjust the steering file to generate the particle eta, momentum range you want.
 
