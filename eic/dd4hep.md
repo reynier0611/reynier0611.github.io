@@ -119,7 +119,7 @@ which eicrecon
 
 ##### Step 1:
 
-- Check which branch we are currently in:
+- Go into the EICrecon directory. Check which branch we are currently in:
 
 ```bash
 git branch -a
@@ -139,6 +139,10 @@ source ./bin/eicrecon-this.sh
 ```
 
 ##### Step 2: 
+
+```bash
+cd src/tests/track_qa/
+```
 
 Use this command to run the simulation and reconstruction: 
 
