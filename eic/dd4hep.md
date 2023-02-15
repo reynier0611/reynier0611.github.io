@@ -135,6 +135,7 @@ then recompile EICrecon:
 
 ```bash
 cmake -S . -B build; cmake --build build --target install -- -j8
+source ./bin/eicrecon-this.sh
 ```
 
 ##### Step 2: 
@@ -158,6 +159,12 @@ auto trajectories = event->Get<eicrecon::TrackingResultTrajectory>("CentralCKFTr
 Realistic seeding for track reconstruction:
 ```c++
 auto trajectories = event->Get<eicrecon::TrackingResultTrajectory>("CentralCKFSeededTrajectories");
+```
+
+##### Step 4:
+
+```bash
+eicrecon -Pplugins=dump_flags,trackqa -Ppodio:output_file=eicrecon_out.root -Ptrack-qa:LogLevel=trace -Pjana:nevents=100 input.edm4hep.root | tee eicrecon_out.dat
 ```
 
 ## Changing beampipe thickness
