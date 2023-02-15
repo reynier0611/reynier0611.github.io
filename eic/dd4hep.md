@@ -168,7 +168,7 @@ auto trajectories = event->Get<eicrecon::TrackingResultTrajectory>("CentralCKFSe
 ##### Step 4:
 
 ```bash
-eicrecon -Pplugins=dump_flags,trackqa -Ppodio:output_file=eicrecon_out.root -Ptrack-qa:LogLevel=trace -Pjana:nevents=100 input.edm4hep.root | tee eicrecon_out.dat
+eicrecon -Pplugins=dump_flags,track_qa -Ppodio:output_file=eicrecon_out.root -Ptrack_qa:LogLevel=trace -Pjana:nevents=100 ../../../../reconstruction_benchmarks/sim_pions_p_0_10_GeV_eta_-4_4_10000.edm4hep.root | tee eicrecon_out.dat
 ```
 
 ## Changing beampipe thickness
