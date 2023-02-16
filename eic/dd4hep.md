@@ -25,17 +25,6 @@ cd DD4HEP
 git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
 {% endhighlight %}
 
-```bash
-shifterimg pull eicweb/jug_xl:nightly
-shifter --image=eicweb/jug_xl:nightly /bin/bash
-eic-shell
-source /opt/detector/setup.sh
-cd /global/project/projectdirs/m3763/reynier/
-mkdir DD4HEP # ONLY THE FIRST TIME
-cd DD4HEP
-git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
-```
-
 </details>
 
 #### Subsequent times:
@@ -189,50 +178,50 @@ eicrecon -Pplugins=dump_flags,track_qa -Ppodio:output_file=eicrecon_out.root -Pp
 
 ## Changing beampipe thickness
 
-#### First time
+<details>
+	<summary>First time</summary>
+<br/> 
 
-```bash
+{% highlight bash %}
 cd /project/projectdirs/alice/reynier/eic/
 mkdir repos
 cd /project/projectdirs/alice/reynier/eic/repos/
-```
+{% endhighlight %}
 
 - From the same directory, make an install directory and link properly:
 
-```bash
+{% highlight bash %}
 mkdir install
 export EIC_SHELL_PREFIX=/project/projectdirs/alice/reynier/eic/repos/install
 export LD_LIBRARY_PATH=$EIC_SHELL_PREFIX/lib:$LD_LIBRARY_PATH
 source $EIC_SHELL_PREFIX/setup.sh
-```
+{% endhighlight %}
 
 - From the same directory clone the epic repo and edit beampipe gold coating thickness:
 
-```bash
+{% highlight bash %}
 git clone https://github.com/eic/epic
 cd epic
 vim compact/central_beampipe.xml
-```
+{% endhighlight %}
 
-- For example, set:
-
-```bash
-gold_thickness="1e-10*um"
-```
+- For example, set: ```gold_thickness="1e-10*um"```
 
 - Then compile this change:
 
-```bash
+{% highlight bash %}
 mkdir build; cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=$EIC_SHELL_PREFIX; make; make install; source setup.sh
-```
+{% endhighlight %}
 
 - Test these changes with a material scan:
 
-```bash
+{% highlight bash %}
 cd /global/project/projectdirs/m3763/reynier/DD4HEP/
 materialScan ${DETECTOR_PATH}/epic.xml 0 0 0 0 50 0
-```
+{% endhighlight %}
+
+</details>
 
 #### Subsequent times
 
