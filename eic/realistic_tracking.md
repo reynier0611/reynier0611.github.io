@@ -2,6 +2,10 @@
 
 <a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a>
 
+### The file with seeder parameters in EICrecon can be found in:
+
+```/global/project/projectdirs/m3763/reynier/DD4HEP/EICrecon/src/algorithms/tracking/OrthogonalTrackSeedingConfig.h```
+
 ### Chat with Joe Osborn (23/01/13):
 
 - Joe is working on an orthogonal seeder based on EICrecon (similar to what Yue Shi is doing, but Yue Shi uses Juggler). Joe modified the code so that parameters can be input from the command line without need to recompile the code.
