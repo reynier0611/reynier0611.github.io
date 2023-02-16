@@ -10,8 +10,6 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 
 <details>
 	<summary>First time</summary>
-
-	### First time:
 	
 	ssh into Cori, go to a convenient directory, and run:
 
