@@ -12,7 +12,7 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 	
 	ssh into Cori, go to a convenient directory, and run:
 
-	<code>
+	{% highlight bash %}
 	shifterimg pull eicweb/jug_xl:nightly
 	shifter --image=eicweb/jug_xl:nightly /bin/bash
 	eic-shell
@@ -21,7 +21,7 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 	mkdir DD4HEP # ONLY THE FIRST TIME
 	cd DD4HEP
 	git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
-	</code>
+	{% endhighlight %}
 
 </details>
 
