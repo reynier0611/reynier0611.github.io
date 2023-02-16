@@ -2,6 +2,8 @@
 
 <a><button name="button" style = "color:red;width:200px;height:30px;cursor:pointer" onclick="window.location.href='https://reynier0611.github.io';">**Back to Table of Content**</button></a>
 
+- [ACTS details on seeding](https://indico.bnl.gov/event/18366/contributions/73060/attachments/45929/77620/ITkACTS%20seed%20confirmation%20.pdf)
+
 ### The file with seeder parameters in EICrecon can be found in:
 
 ```/global/project/projectdirs/m3763/reynier/DD4HEP/EICrecon/src/algorithms/tracking/OrthogonalTrackSeedingConfig.h```
