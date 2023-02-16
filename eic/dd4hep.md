@@ -9,10 +9,12 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 ## Getting DD4HEP working on Cori
 
 <details>
-	<summary>First time</summary>
-	#### First time:
+	<summary>First time</summary>]
+
+	### First time:
 	
 	ssh into Cori, go to a convenient directory, and run:
+
 	```bash
 	shifterimg pull eicweb/jug_xl:nightly
 	shifter --image=eicweb/jug_xl:nightly /bin/bash
@@ -23,6 +25,7 @@ See more details [here](https://github.com/bschmookler/athena_ana) and [here](ht
 	cd DD4HEP
 	git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
 	```
+	
 </details>
 
 #### Subsequent times:
