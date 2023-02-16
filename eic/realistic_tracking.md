@@ -6,7 +6,9 @@
 
 ### The file with seeder parameters in EICrecon can be found in:
 
-```/global/project/projectdirs/m3763/reynier/DD4HEP/EICrecon/src/algorithms/tracking/OrthogonalTrackSeedingConfig.h```
+```
+/global/project/projectdirs/m3763/reynier/DD4HEP/EICrecon/src/algorithms/tracking/OrthogonalTrackSeedingConfig.h
+```
 
 ### Chat with Joe Osborn (23/01/13):
 
