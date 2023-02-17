@@ -3,11 +3,8 @@
 ## LBL <img src="img/lbl_logo.jpg" width="50" height="40" style="float: right;" />
 
 - **[Useful pyjetty notes](alice/pyjetty_notes.md)**
-
 - **[Data on hiccup and fastsim](alice/hiccup_data_and_fastsim.md)**
-
 - **[Notes on pyjetty structure](alice/pyjetty_structure.md)**
-
 - **[TREX justification](misc/trex.md)**
 
 ## ALICE <img src="img/alice_logo.jpg" width="40" height="40" style="float: right;" />
