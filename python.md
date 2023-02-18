@@ -4,6 +4,18 @@
 
 - [5 ways to Fibonacci in Python](https://technobeans.com/2012/04/16/5-ways-of-fibonacci-in-python/)
 
+### Useful functions and commands:
+
+```python
+sorted('weeav')
+```
+
+Output:
+
+```python
+['a', 'e', 'e', 'v', 'w']
+```
+
 ### Collections
 
 [Python collections](https://docs.python.org/3/library/collections.html)
@@ -12,7 +24,7 @@
 import collections
 ```
 
-### Default dictionary
+#### Default dictionary
 
 dict subclass that calls a factory function to supply missing values
 
