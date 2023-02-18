@@ -12,6 +12,14 @@
 import collections
 ```
 
+### Default dictionary
+
+dict subclass that calls a factory function to supply missing values
+
+```python
+ans = collections.defaultdict()
+```
+
 #### Counter
 
 dict subclass for counting hashable objects
@@ -30,9 +38,7 @@ Here's an implementation:
 ```python
 mydict = {}
 for let in word:
-    if let in mydict:
-        mydict[let] += 1
-    else:
-        mydict[let] = 1
+    if let in mydict: mydict[let] += 1
+    else: mydict[let] = 1
 mydict
 ```
