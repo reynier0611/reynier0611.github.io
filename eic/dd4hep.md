@@ -93,17 +93,24 @@ npsim --runType batch --numberOfEvents -1 --compactFile ${DETECTOR_PATH}/epic.xm
 
 ## Compiling EICrecon
 
+<details>
+	<summary>First time</summary>
+<br/> 
+
 - If you want to contribute (push) code:
 
-```bash
+{% highlight bash %}
 git clone git@github.com:eic/EICrecon
-```
+{% endhighlight %}
 
 - you may need to be added to some list. Alternatively, do:
 
-```bash
+{% highlight bash %}
 git clone https://github.com/eic/EICrecon
-```
+{% endhighlight %}
+
+</details>
+
 
 - Afterwards:
 
@@ -174,6 +181,26 @@ auto trajectories = event->Get<eicrecon::TrackingResultTrajectory>("CentralCKFSe
 
 ```bash
 eicrecon -Pplugins=dump_flags,track_qa -Ppodio:output_file=eicrecon_out.root -Ppodio:output_include_collections=MCParticles,CentralTrackSeedingResults -Ptrack_qa:LogLevel=trace -Pjana:nevents=100 ../../../../reconstruction_benchmarks/sim_pions_p_0_10_GeV_eta_-4_4_10000.edm4hep.root | tee eicrecon_out.dat
+```
+
+## Software stability
+
+download a specific image version e.g.
+
+```bash
+shifterimg pull eicweb/jug_xl:nightly-2023-02-16
+```
+
+You can check all available container version on docker at [https://hub.docker.com/r/eicweb/jug_xl/tags](https://hub.docker.com/r/eicweb/jug_xl/tags) and check all downloaded version on Cori by:
+
+```bash  
+shifterimg images | grep "jug"
+```
+
+Once you download (pull) a tagged version, you just need to load the same image every time by:
+
+```bash
+shifter --image=eicweb/jug_xl:nightly-2023-02-16 /bin/bash
 ```
 
 ## Changing beampipe thickness
