@@ -28,6 +28,7 @@ MathJax.Hub.Queue(function() {
     - arXiv: [2211.08928](https://arxiv.org/pdf/2211.08928.pdf)
 
 - [RCT - Measurement of the angle between jet axes in Pb-Pb collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV](https://alice-publications.web.cern.ch/node/8394)
+    - arXiv: [2303.13347](https://arxiv.org/pdf/2303.13347.pdf)
 
 ### Mine
 - [RCT - Measurements of jet-axis differences in 0-10$\%$ Pb-Pb collisions at $\sqrt{s_{NN}}=5.02$ TeV](https://alice-notes.web.cern.ch/node/1300)
