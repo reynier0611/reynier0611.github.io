@@ -22,3 +22,5 @@
 - Switzerland 🇨🇭
 
 - France 🇫🇷
+
+- Germany 🇩🇪
