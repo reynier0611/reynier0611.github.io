@@ -10,6 +10,7 @@
 ### ALICE <img src="img/alice_logo.jpg" width="40" height="40" style="float: right;" />
 
 - **[ALICE analysis notes and papers](alice/alice_analysis_notes.md)**
+- **[O2 notes](alice/o2notes.md)**
 - **[Hyperloop operator training](alice/hyperloop_operator.md)**
 - **[ITS3 Test Beam Analysis](alice/its3_test_beam.md)**
 - **[JSUB Coordination](alice/jsub.md)**
