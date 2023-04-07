@@ -30,6 +30,16 @@ Finally run the reconstruction:
 o2-its-reco-workflow  --trackerCA --tracking-mode sync --configKeyValues "fastMultConfig.cutMultClusLow=-1;fastMultConfig.cutMultClusHigh=-1;fastMultConfig.cutMultVtxHigh=-1;ITSVertexerParam.phiCut=0.5;ITSVertexerParam.clusterContributorsCut=3;ITSVertexerParam.tanLambdaCut=0.2;;"
 ```
 
+### Scripts Matteo recommended to see how the data is accessed
+
+```bash
+O2/Detectors/ITSMFT/ITS/macros/test/CheckTracksCA.C
+```
+
+```bash
+O2/Detectors/ITSMFT/ITS/macros/test/CheckVertices.C
+```
+
 ### Meeting with Matteo Concas on April 3, 2023:
 
 #### Steps to install O2:
