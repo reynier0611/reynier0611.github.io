@@ -6,7 +6,10 @@ I am working on this in my ```WORK/ALICE/O2/``` directory in my computer.
 
 ### Some useful links
 
-- See chapter 4 of Matteo's [https://iris.polito.it/retrieve/e384c432-395f-d4b2-e053-9f05fe0a1d67/conv_phdthesis.pdf](PhD thesis).
+- See chapter 4 of Matteo's [PhD thesis](https://iris.polito.it/retrieve/e384c432-395f-d4b2-e053-9f05fe0a1d67/conv_phdthesis.pdf).
+
+- Default tracking configuration parameters [here](https://github.com/AliceO2Group/AliceO2/blob/dev/Detectors/ITSMFT/ITS/tracking/include/ITStracking/TrackingConfigParam.h).
+
 
 ### Simulations for ITS studies:
 
