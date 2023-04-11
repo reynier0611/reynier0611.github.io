@@ -4,6 +4,10 @@
 
 I am working on this in my ```WORK/ALICE/O2/``` directory in my computer.
 
+### Some useful links
+
+- See chapter 4 of Matteo's [https://iris.polito.it/retrieve/e384c432-395f-d4b2-e053-9f05fe0a1d67/conv_phdthesis.pdf](PhD thesis).
+
 ### Simulations for ITS studies:
 
 First do:
