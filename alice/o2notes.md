@@ -10,6 +10,16 @@ I am working on this in my ```WORK/ALICE/O2/``` directory in my computer.
 
 - Default tracking configuration parameters [here](https://github.com/AliceO2Group/AliceO2/blob/dev/Detectors/ITSMFT/ITS/tracking/include/ITStracking/TrackingConfigParam.h).
 
+- We went in detail over [this code](https://github.com/AliceO2Group/AliceO2/blob/dev/Detectors/ITSMFT/ITS/tracking/src/VertexerTraits.cxx)
+
+	- Three steps:
+
+		1. combinatorial (trackletting). Tracklets are formed from clusters in two layers. In this step, we find all the tracklets (from layers 0 and 1, and layers 1 and 2).
+
+		2. tracklet selection. In this step we check which tracklets formed with layers 0-1 are aligned with those formed from layers 1-2. After the confirmation, we keep the tracklet from layers 0-1 (i.e. we don't refit or anything. The tracklets from the outer layers are just for confirmation).
+
+		3. compute vertices.
+
 
 ### Simulations for ITS studies:
 
