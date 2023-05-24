@@ -14,6 +14,14 @@ from tensorflow.keras.datasets import mnist
 To load images from a directory:
 
 ```python
+from PIL import Image
+pic = Image.open('path/to/file.png')
+pic = np.asarray(pic)
+```
+
+or
+
+```python
 plt.imread('path/to/file.png')
 ```
 

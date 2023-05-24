@@ -24,3 +24,5 @@
 - France 🇫🇷
 
 - Germany 🇩🇪
+
+- Mexico 🇲🇽
